@@ -892,7 +892,7 @@ h6 { font-size: 16px; }
 }
 .progress_inner{
 	width:100%;
-	margin-bottom:37px;
+	margin-bottom:5px;
 }
 .progress_inner:last-child{
 	margin-bottom: 0px;
@@ -906,7 +906,7 @@ h6 { font-size: 16px; }
 .progress_inner span.label{
 	opacity: 0;
 	transform: translateY(10px);
-	display: block;
+	display: inline;
 	color: #fff;
 	font-size: 18px;
 	font-weight: 500;
@@ -922,15 +922,22 @@ h6 { font-size: 16px; }
 	opacity: 1;
 	transform: translateY(0px);
 }
-.progress_inner span.number{
+/* .progress_inner span.number{
 	float: right;
 	position: absolute;
 	right: 100%;
 	bottom: -2px;
-	transition: all 2s cubic-bezier(0.165, 0.840, 0.440, 1.000);  /* IE 10+ */
-	color: var(--extra-color);
+	transition: all 2s cubic-bezier(0.165, 0.840, 0.440, 1.000);  
 	font-size: 18px;
 	font-family: var(--font-family-extra);
+} */ 
+.progress_inner span.number {
+    position: static;  /* Removes absolute positioning */
+    margin-right: 8px; /* Adjust spacing before "React" */
+    color: var(--extra-color);
+    font-size: 18px;
+    font-family: var(--font-family-extra);
+    transition: all 2s cubic-bezier(0.165, 0.840, 0.440, 1.000); /* IE 10+ */
 }
 .progress_inner .background{
 	background:#e7e5f1;
