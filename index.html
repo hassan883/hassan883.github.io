@@ -85,22 +85,27 @@
 					<div class="details">
 						<div class="menu">
 							<ul class="anchor_nav">
-								<li class="current"><a href="#home">Home</a></li>
+								<!-- <li class="current"><a href="#home">Home</a></li> -->
 								<li><a href="#about">About</a></li>
-								<li><a href="#service">Service</a></li>
-								<li><a href="#portfolio">Portfolio</a></li>
+								<li><a href="#skills">Skills</a></li>
+								<li><a href="#education">Education</a></li>
+								<li><a href="#research">Research</a></li>
+								<li><a href="#experience">Experience</a></li>
+								<li><a href="#certification">Certifications</a></li>
+								<li><a href="#award">Awards</a></li>
+								<li><a href="#activities">Activities</a></li>
+								<!-- <li><a href="#portfolio">Portfolio</a></li> -->
 								<li><a href="#blog">Blog</a></li>
-								<li><a href="#contact">Contact</a></li>
 							</ul>
 						</div>
-						<div class="social">
+						<!-- <div class="social">
 							<ul>
 								<li><a href="#"><i class="icon-facebook-1"></i></a></li>
 								<li><a href="#"><i class="icon-twitter-1"></i></a></li>
 								<li><a href="#"><i class="icon-behance-2"></i></a></li>
 								<li><a href="#"><i class="icon-instagram-1"></i></a></li>
 							</ul>
-						</div>
+						</div> -->
 					</div>
 				</div>
 			</div>
@@ -115,9 +120,48 @@
 						<div class="left">
 							<h3 class="name">Hassan <span>Javed</span></h3>
 							<p class="job">AI Developer and Researcher based In Pakistan (NASTP @ PAF)</p>
-							<div class="foliox_tm_button">
-								<a class="anchor" href="#contact"><span>Get Connected</span></a>
+							<div class="hero-buttons" style="display: flex; flex-direction: row; justify-content: flex-start; align-items: center;">
+								<div class="foliox_tm_button" style="margin-right: 15px;">
+									<a href="javascript:void(0);" onclick="copyEmail()" style="display: flex; align-items: center; justify-content: center; white-space: nowrap;">
+										<i class="icon-mail-1" style="margin-right: 10px;"></i>
+										<span>Contact Me</span>
+									</a>
+								</div>
+								<div class="foliox_tm_button" style="margin-right: 15px;">
+									<a href="https://github.com/hassan883" target="_blank" style="display: flex; align-items: center; background-color: #24292e; justify-content: center; white-space: nowrap;">
+										<i class="icon-github" style="margin-right: 10px;"></i>
+										<span>GitHub</span>
+									</a>
+								</div>
+								<div class="foliox_tm_button">
+									<a href="https://www.linkedin.com/in/hassanjaved4/" target="_blank" style="display: flex; align-items: center; background-color: #0077b5; justify-content: center; white-space: nowrap;">
+										<i class="icon-linkedin" style="margin-right: 10px;"></i>
+										<span>LinkedIn</span>
+									</a>
+								</div>
 							</div>
+							
+		<style>
+		/* Responsive styles for hero buttons */
+		@media (max-width: 768px) {
+			.hero-buttons {
+				flex-direction: column !important;
+				align-items: flex-start !important;
+			}
+			.hero-buttons .foliox_tm_button {
+				margin-right: 0 !important;
+				margin-bottom: 15px;
+				width: 100%;
+			}
+			.hero-buttons .foliox_tm_button:last-child {
+				margin-bottom: 0;
+			}
+			.hero-buttons .foliox_tm_button a {
+				width: 100%;
+				padding: 12px 30px;
+			}
+		}
+		</style>
 						</div>
 						<div class="right">
 							<img class="tilt-effect" src="img/hero/final_image.png" alt="" />
@@ -129,7 +173,7 @@
 		<!-- HERO -->
 
 		<!-- FEATURES -->
-		<div class="foliox_tm_section">
+		<!-- <div class="foliox_tm_section">
 			<div class="foliox_tm_features">
 				<div class="container">
 					<div class="list">
@@ -175,7 +219,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 		<!-- /FEATURES -->
 
 		<!-- ABOUT -->
@@ -183,8 +227,10 @@
 			<div class="foliox_tm_about">
 				<div class="container">
 					<div class="foliox_tm_main_title">
-						<span>About Me</span>
-						<h3>A Passionate AI Developer and Researcher</h3>
+						<!-- <span>About Me</span> -->
+						<!-- <h3  style="color :#00c0ff" >A Passionate AI Developer and Researcher</h3> -->
+						<h3  style="color :#00c0ff" >About Me</h3>
+
 					</div>
 					<div class="wrapper">
 						<div class="left">
@@ -206,7 +252,7 @@
 							</div>
 						</div>
 						<div class="right">
-							<h3 class="title">About Me</h3>
+							<!-- <h3 class="title">About Me</h3> -->
 							<p class="text" style="text-align: justify;">As an <b>AI Developer and Researcher</b> with
 								over <b>4 years</b> of specialized experience in <b>Machine Learning, Deep Learning,
 									NLP, and Prompt Engineering</b>, complemented by a robust <b>6 years</b> background
@@ -315,12 +361,12 @@
 		<!-- /COUNTER -->
 
 		<!-- SKILLS -->
-		<div class="foliox_tm_section">
+		<div class="foliox_tm_section"  id="skills">
 			<div class="foliox_tm_skills">
 				<div class="container">
 					<div class="foliox_tm_main_title">
-						<span>Skills</span>
-						<h3>I Work Hard to Improve My Skills Regularly</h3>
+						<!-- <span>Skills</span> -->
+						<h3 style="color: #00c0ff;">Skills and Interests</h3>
 					</div>
 					<div class="list">
 						<div class="left">
@@ -394,241 +440,53 @@
 		</div>
 		<!-- /SKILLS -->
 
-		<!-- SERVICES -->
-		<div class="foliox_tm_section" id="service">
-			<div class="foliox_tm_services">
-				<div class="container">
-					<div class="foliox_tm_main_title">
-						<span>Services</span>
-						<h3>What I Do for My Clients</h3>
-					</div>
-					<div class="list">
-						<ul>
-							<li class="wow fadeInUp" data-wow-duration="1s">
-								<div class="list_inner tilt-effect">
-									<span class="icon"><img class="svg" src="img/svg/monitor.svg" alt="" /></span>
-									<h3 class="title">AI & Machine Learning Development</h3>
-									<p class="text">I design and implement advanced AI models, with expertise in Llama
-										models, including Llama 3.2 and 3.1 (3B and 8B instruct models) as well as Llama
-										3.2 (11B and 90B models) for visual tasks. My skill set spans NLP, computer
-										vision, and time series analysis, delivering tailored, high-performance
-										solutions.</p>
-								</div>
-							</li>
-							<li class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
-								<div class="list_inner tilt-effect">
-									<span class="icon"><img class="svg" src="img/svg/anchor.svg" alt="" /></span>
-									<h3 class="title">Data Science & Advanced Analytics</h3>
-									<p class="text">I provide in-depth data analysis and predictive modeling to uncover
-										valuable insights. My work involves data preprocessing, visualization, and
-										advanced analytics, including time series analysis and graph-based techniques,
-										to tackle complex data challenges.</p>
-								</div>
-							</li>
-							<li class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
-								<div class="list_inner tilt-effect">
-									<span class="icon"><img class="svg" src="img/svg/bar.svg" alt="" /></span>
-									<h3 class="title">Machine Learning Engineering & Model Optimization</h3>
-									<p class="text">I develop, fine-tune, and deploy machine learning models, with
-										strengths in model explainability and performance optimization. My experience
-										includes retrieval-augmented generation (RAG) for enhancing model accuracy and
-										interpretability, as well as using SHAP for model transparency.</p>
-								</div>
-							</li>
-							<!-- <li class="wow fadeInUp" data-wow-duration="1s">
-								<div class="list_inner tilt-effect">
-									<span class="icon"><img class="svg" src="img/svg/aim.svg" alt="" /></span>
-									<h3 class="title">Photography</h3>
-									<p class="text">Kobita tumi sopno charini hoye ersest labo met, consectetur adipi ctetur adipisicing eod tempor</p>
-								</div>
-							</li>
-							<li class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
-								<div class="list_inner tilt-effect">
-									<span class="icon"><img class="svg" src="img/svg/avatar.svg" alt="" /></span>
-									<h3 class="title">Consultancy</h3>
-									<p class="text">Kobita tumi sopno charini hoye ersest labo met, consectetur adipi ctetur adipisicing eod tempor</p>
-								</div>
-							</li>
-							<li class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
-								<div class="list_inner tilt-effect">
-									<span class="icon"><img class="svg" src="img/svg/code.svg" alt="" /></span>
-									<h3 class="title">Web Development</h3>
-									<p class="text">Kobita tumi sopno charini hoye ersest labo met, consectetur adipi ctetur adipisicing eod tempor</p>
-								</div>
-							</li> -->
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- /SERVICES -->
+		<!-- EDUCATIONS -->
 
-		<!-- RESUME -->
-		<div class="foliox_tm_section">
+		<div class="foliox_tm_section"  id="education">
 			<div class="foliox_tm_resume">
 				<div class="container">
-					<div class="foliox_tm_main_title">
-						<span>Resume</span>
-						<h3>I Worked for Some Big Companies</h3>
-					</div>
+					<!-- <div class="foliox_tm_main_title">
+								<span>Resume</span>
+								<h3>I Worked for Some Big Companies</h3>
+							</div> -->
 					<div class="wrapper">
-						<div class="left">
+		
+						<!-- Education Section -->
+						<div class="full-width">
 							<div class="title">
-								<h3>Experience</h3>
+								<h3 style="color: #00c0ff;">Education</h3>
 							</div>
 							<div class="resume_list">
 								<ul>
 									<li class="wow fadeInUp" data-wow-duration="1s">
 										<div class="list_inner">
-											<span class="icon"><img class="svg" src="img/svg/case-2.svg"
-													alt="" /></span>
+											<span class="icon"><img class="svg" src="img/svg/degree.svg" alt="" /></span>
 											<div class="resume_title">
-												<h3>Artificial Intelligence Developer <span>(Mar, 2024 - Present)</span>
-												</h3>
-												<span class="company">NASTP @ PAF (CENTAIC)</span>
-											</div>
-											<p class="text" style="text-align: justify;">Research and develop chatbots
-												models with Llama3.2 3B Model and multimodel Llama3.2 11B and 90B and
-												applied the RAG and Graph RAG approach. Developed time series
-												classification and forecasting models with LSTM, Sktime, and Aeon, using
-												PyTorch and TensorFlow for synthetic data and model training. Conducted
-												geospatial analysis with QGIS and generated synthetic flight patterns,
-												advancing AI research in aerospace.</p>
-										</div>
-									</li>
-									<li class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
-										<div class="list_inner">
-											<span class="icon"><img class="svg" src="img/svg/case-2.svg"
-													alt="" /></span>
-											<div class="resume_title">
-												<h3>Artificial Intelligence Research Executive <span>(Oct, 2023 - Feb,
-														2024)</span></h3>
-												<span class="company">PanaceaLogics</span>
-											</div>
-											<p class="text" style="text-align: justify;">Experienced in implementing NLP
-												solutions using LLMs, OCR, and advanced models like LayoutLMv2, LiLTv2,
-												and GPT-2. Developed chatbots and PDF extraction systems, leveraging
-												BERT, LangChain, and OpenAI tools. Proficient in Hugging Face and RAG
-												approaches with LLaMA models, alongside optimization techniques such as
-												LORA and QLORA. Skilled in fine-tuning LLMs and mentoring AI and NLP
-												professionals.</p>
-										</div>
-									</li>
-									<li class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
-										<div class="list_inner">
-											<span class="icon"><img class="svg" src="img/svg/case-2.svg"
-													alt="" /></span>
-											<div class="resume_title">
-												<h3>Artificial Intelligence Specialist <span>(Mar, 2023 - Oct,
-														2023)</span></h3>
-												<span class="company">PanaceaLogics</span>
-											</div>
-											<p class="text" style="text-align: justify;">Collected and prepared fish
-												data for classification, segmentation, and object detection, including
-												distance estimation via stereo vision. Calculated fish BMI through image
-												analysis and developed paddle wheel detection for monitoring. Created an
-												NLP system for efficient data retrieval by querying PDF content.</p>
-										</div>
-									</li>
-									<li class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
-										<div class="list_inner">
-											<span class="icon"><img class="svg" src="img/svg/case-2.svg"
-													alt="" /></span>
-											<div class="resume_title">
-												<h3>Data Scientist (Remote)<span>(Aug, 2022 - Nov, 2023)</span></h3>
-												<span class="company">2hm Inc</span>
-											</div>
-											<p class="text" style="text-align: justify;">Researched chicken diseases
-												with data augmentation and classification, and built a performance
-												evaluation app in Flask. Analyzed marketing datasets with data mining,
-												EDA, model building, and reporting. Developed PowerBI dashboards with
-												query triggers to improve data visualization and analysis.</p>
-										</div>
-									</li>
-									<li class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
-										<div class="list_inner">
-											<span class="icon"><img class="svg" src="img/svg/case-2.svg"
-													alt="" /></span>
-											<div class="resume_title">
-												<h3>Software Engineer (Remote)<span>(Jan, 2022 - July, 2022)</span></h3>
-												<span class="company">2hm Inc</span>
+												<h3>National University of Computing and Emerging Sciences (FAST) <span>(Aug.
+														2022 – Feb. 2025)</span></h3>
+												<span class="company">Master of Science in Data Science | CGPA: 3.17/4.00</span>
 											</div>
 											<p class="text" style="text-align: justify;">
-												Developed full-stack MERN applications, optimized JavaScript solutions,
-												and built backend services with Node.js and Express, testing APIs with
-												Postman. Designed scalable MongoDB databases for high-performance
-												applications.</p>
-										</div>
-									</li>
-								</ul>
-							</div>
-						</div>
-						<div class="right">
-							<div class="title">
-								<h3>Education</h3>
-							</div>
-							<div class="resume_list">
-								<ul>
-									<li class="wow fadeInUp" data-wow-duration="1s">
-										<div class="list_inner">
-											<span class="icon"><img class="svg" src="img/svg/degree.svg"
-													alt="" /></span>
-											<div class="resume_title">
-												<h3>Masters of Science (Data Science) <span>(2022 - 2024)</span></h3>
-												<span class="company">FAST National University of Computer and Emerging
-													Science</span>
-											</div>
-											<p class="text" style="text-align: justify;">Utilized Apache Spark for graph
-												data processing and created an Azure ETL pipeline for efficient data
-												processing.
-
-												Employed Apache Kafka for big data analysis, applying algorithms to
-												reduce computational complexity in large datasets.
-
-												Enhanced data processing capabilities and improved the efficiency of big
-												data analysis within the project framework.</p>
+												• <b>Teaching Assistant: Web Programming (2022–2023):</b> For 2 semesters,
+												Supported BS (7th semester) students, Provided coding, debugging, and MERN Stack
+												(MongoDB, Express.js, React.js, Node.js) support over two semesters.
+											</p>
 										</div>
 									</li>
 									<li class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
 										<div class="list_inner">
-											<span class="icon"><img class="svg" src="img/svg/degree.svg"
-													alt="" /></span>
+											<span class="icon"><img class="svg" src="img/svg/degree.svg" alt="" /></span>
 											<div class="resume_title">
-												<h3>Web Programming (TA) <span>(Jan, 2023 - Dec, 2023)</span></h3>
-												<span class="company">FAST National University of Computer and Emerging
-													Science</span>
+												<h3>University Of Kotli (AJK) <span>(Oct. 2017 – Nov. 2021)</span></h3>
+												<span class="company">Bachelor of Science in Computer Science | CGPA:
+													3.86/4.00</span>
 											</div>
-											<p class="text" style="text-align: justify;">Provided problem-solving
-												support to students, helping them overcome coding challenges and
-												understand complex concepts.
-
-												Offered technical support including debugging code and resolving various
-												technical issues.
-
-												Assisted in courses by applying MERN stack concepts (MongoDB,
-												Express.js, React, and Node.js) to enhance learning and practical
-												application.</p>
-										</div>
-									</li>
-									<li class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
-										<div class="list_inner">
-											<span class="icon"><img class="svg" src="img/svg/degree.svg"
-													alt="" /></span>
-											<div class="resume_title">
-												<h3>Bachelors of Science (Computer Science) <span>(2017 - 2021)</span>
-												</h3>
-												<span class="company">University Of Kotli (AJK)</span>
-											</div>
-											<p class="text" style="text-align: justify;"><b>Final Year Project in
-													Garbage Detection Using Drone's:</b> Developed a custom-trained Mask
-												R-CNN model for detecting garbage in open areas and dustbins, enhancing
-												environmental monitoring.
-
-												Implemented volume measurement techniques for garbage to optimize waste
-												management processes.
-
-												Deployed the model using the Django framework and REST APIs, ensuring
-												robust and scalable application deployment.</p>
+											<p class="text" style="text-align: justify;">
+												• <b>Final Year Project: Intelligent Waste Management System</b> - Developed a
+												custom-trained Mask R-CNN model for garbage detection with <b>94.34%</b>
+												accuracy, implemented volume measurement techniques, and deployed using Django
+												and REST APIs.
+											</p>
 										</div>
 									</li>
 								</ul>
@@ -638,179 +496,453 @@
 				</div>
 			</div>
 		</div>
-		<!-- /RESUME -->
 
-		<!-- PORTFOLIO -->
-		<!-- <div class="foliox_tm_section" id="portfolio">
-			<div class="foliox_tm_portfolio">
+
+		<!-- \EDUCATIONS -->
+
+
+		
+		<!-- RESEARCH EXPERIENCE -->
+		<div class="foliox_tm_section"  id="research">
+			<div class="foliox_tm_resume">
 				<div class="container">
-					<div class="foliox_tm_main_title">
-						<span>Portfolio</span>
-						<h3>What I Do for My Clients</h3>
-					</div>
-					<div class="portfolio_filter">
-						<ul>
-							<li><a href="#" class="current" data-filter="*">All</a></li>
-							<li><a href="#" data-filter=".youtube">Youtube</a></li>
-							<li><a href="#" data-filter=".vimeo">Vimeo</a></li>
-							<li><a href="#" data-filter=".soundcloud">Soundcloud</a></li>
-							<li><a href="#" data-filter=".popup">Popup</a></li>
-							<li><a href="#" data-filter=".content">Content</a></li>
-						</ul>
-					</div>
-					<div class="portfolio_list wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
-						<ul class="gallery_zoom">
-							<li class="youtube">
-								<div class="list_inner tilt-effect">
-									<div class="image">
-										<img src="img/thumbs/1-1.jpg" alt="" />
-										<div class="main" data-img-url="img/portfolio/1.jpg"></div>
-									</div>
-									<div class="details">
-										<h3>Axe Droow</h3>
-										<span>Youtube</span>
-									</div>
-									<a class="foliox_tm_full_link popup-youtube"
-										href="https://www.youtube.com/watch?v=7e90gBu4pas"></a>
-								</div>
-							</li>
-							<li class="vimeo">
-								<div class="list_inner tilt-effect">
-									<div class="image">
-										<img src="img/thumbs/1-1.jpg" alt="" />
-										<div class="main" data-img-url="img/portfolio/2.jpg"></div>
-									</div>
-									<div class="details">
-										<h3>Mockup Clock</h3>
-										<span>Vimeo</span>
-									</div>
-									<a class="foliox_tm_full_link popup-vimeo" href="https://vimeo.com/337293658"></a>
-								</div>
-							</li>
-							<li class="soundcloud">
-								<div class="list_inner tilt-effect">
-									<div class="image">
-										<img src="img/thumbs/1-1.jpg" alt="" />
-										<div class="main" data-img-url="img/portfolio/3.jpg"></div>
-									</div>
-									<div class="details">
-										<h3>Afra Porter</h3>
-										<span>Soundcloud</span>
-									</div>
-									<a class="foliox_tm_full_link soundcloude_link mfp-iframe audio"
-										href="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/471954807&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></a>
-								</div>
-							</li>
-							<li class="popup">
-								<div class="list_inner tilt-effect">
-									<div class="image">
-										<img src="img/thumbs/1-1.jpg" alt="" />
-										<div class="main" data-img-url="img/portfolio/4.jpg"></div>
-									</div>
-									<div class="details">
-										<h3>Good Idea</h3>
-										<span>Popup</span>
-									</div>
-									<a class="foliox_tm_full_link zoom" href="img/portfolio/4.jpg"></a>
-								</div>
-							</li>
-							<li class="popup">
-								<div class="list_inner tilt-effect">
-									<div class="image">
-										<img src="img/thumbs/1-1.jpg" alt="" />
-										<div class="main" data-img-url="img/portfolio/5.jpg"></div>
-									</div>
-									<div class="details">
-										<h3>Magic Art</h3>
-										<span>Popup</span>
-									</div>
-									<a class="foliox_tm_full_link zoom" href="img/portfolio/5.jpg"></a>
-								</div>
-							</li>
-							<li class="content">
-								<div class="list_inner tilt-effect">
-									<div class="image">
-										<img src="img/thumbs/1-1.jpg" alt="" />
-										<div class="main" data-img-url="img/portfolio/6.jpg"></div>
-									</div>
-									<div class="details">
-										<h3>Creative Design</h3>
-										<span>Content</span>
-									</div>
-									<a class="foliox_tm_full_link portfolio_popup" href="#"></a>
-
-									<div class="hidden_content">
-										<div class="popup_details">
-											<div class="main_details">
-												<div class="textbox">
-													<p>We live in a world where we need to move quickly and iterate on
-														our ideas as flexibly as possible.</p>
-													<p>Mockups are useful both for the creative phase of the project -
-														for instance when you're trying to figure out your user flows or
-														the proper visual hierarchy - and the production phase when they
-														phase when they will represent the target product. Building
-														mockups strikes the ideal balance ease of modification.</p>
-												</div>
-												<div class="detailbox">
-													<ul>
-														<li>
-															<span class="first">Client</span>
-															<span>Alvaro Morata</span>
-														</li>
-														<li>
-															<span class="first">Category</span>
-															<span><a href="#">Content</a></span>
-														</li>
-														<li>
-															<span class="first">Date</span>
-															<span>October 07, 2022</span>
-														</li>
-													</ul>
-												</div>
+					<!-- <div class="foliox_tm_main_title">
+						<span>Resume</span>
+						<h3>I Worked for Some Big Companies</h3>
+					</div> -->
+					<div class="wrapper">
+					
+						<div class="full-width">
+							<div class="title">
+								<h3 style="color: #00c0ff;">Research Experience</h3>
+							</div>
+							<div class="resume_list">
+								<ul>
+									<li class="wow fadeInUp" data-wow-duration="1s">
+										<div class="list_inner">
+											<span class="icon"><img class="svg" src="img/svg/research.svg"
+													alt="" /></span>
+											<div class="resume_title">
+												<h3>FAST National University of Computer and Emerging Science <span>(Jan 2024 - Feb 2025)</span></h3>
+												<span class="company">Graduate Researcher | Supervisor: Dr. Labiba Fahad, Ph.D </span>
 											</div>
-											<div class="additional_images">
-												<ul>
-													<li>
-														<div class="list_inner">
-															<div class="my_image">
-																<img src="img/thumbs/4-2.jpg" alt="" />
-																<div class="main" data-img-url="img/portfolio/1.jpg">
-																</div>
-															</div>
-														</div>
-													</li>
-													<li>
-														<div class="list_inner">
-															<div class="my_image">
-																<img src="img/thumbs/4-2.jpg" alt="" />
-																<div class="main" data-img-url="img/portfolio/2.jpg">
-																</div>
-															</div>
-														</div>
-													</li>
-													<li>
-														<div class="list_inner">
-															<div class="my_image">
-																<img src="img/thumbs/4-2.jpg" alt="" />
-																<div class="main" data-img-url="img/portfolio/3.jpg">
-																</div>
-															</div>
-														</div>
-													</li>
-												</ul>
+											<p class="text" style="text-align: justify;">
+												• <b>Plant Species Identification with AI:</b> Conducted research on advanced plant species identification by integrating Vision Transformer (ViT) models with metadata fusion, achieving <b>97.27%</b> classification accuracy and <b>0.9842</b> Mean Reciprocal Rank.
+												<br>
+												• <b>Multi-Modal Deep Learning Architecture:</b> Developed a hybrid approach combining deep visual feature extraction with geographical and taxonomic metadata to enhance identification of morphologically similar species, significantly outperforming traditional CNN-based methods.
+												<br>
+												• <b>Data Preprocessing and Analysis:</b> Implemented comprehensive preprocessing pipeline with data augmentation techniques to improve model robustness across diverse environmental conditions, utilizing PyTorch for model development and evaluation.
+											</p>
+									</li>
+									<li class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
+										<div class="list_inner">
+											<span class="icon"><img class="svg" src="img/svg/research.svg" alt="" /></span>
+											<div class="resume_title">
+												<h3>University of Kotli (AJK) <span>(Mar 2021 - Oct 2021)</span></h3>
+												<span class="company">Undergraduate Researcher | Supervisor: Dr. Zahid Mehmood, Ph.D</span>
 											</div>
+											<p class="text" style="text-align: justify;">
+												• <b>Intelligent Waste Management System:</b> Developed a custom-trained Mask R-CNN model for detecting garbage in open areas and dustbins, achieving <b>94.34%</b> accuracy for each waste class, enhancing environmental monitoring capabilities.
+												<br>
+												• <b>Dataset Creation and Labeling:</b> Created and meticulously labeled a custom dataset of approximately <b>500 images</b> across <b>3 waste classes</b>, establishing the foundation for accurate model training and validation.
+												<br>
+												• <b>Volume Measurement Techniques:</b> Implemented advanced computer vision algorithms for garbage volume measurement, enabling <b>precise segmentation</b> of waste areas to optimize collection schedules and resource allocation.
+												<br>
+												• <b>Web Application Development:</b> Deployed the trained model using <b>Django</b> framework and <b>REST APIs</b>, ensuring a robust and scalable application for real-time waste monitoring and management.
+											</p>
 										</div>
-									</div>
-									
-
-								</div>
-							</li>
-						</ul>
+									</li>
+							
+								</ul>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div> -->
-		<!-- /PORTFOLIO -->
+		</div>
+		<!-- \RESEARCH EXPERIENCE -->
+
+		<!-- PROFESSIONAL EXPERIENCE -->
+		<div class="foliox_tm_section"  id="experience">
+			<div class="foliox_tm_resume">
+				<div class="container">
+					<!-- <div class="foliox_tm_main_title">
+								<span>Resume</span>
+								<h3>I Worked for Some Big Companies</h3>
+							</div> -->
+					<div class="wrapper">
+		
+						<!-- Professional Experience Section -->
+						<div class="full-width">
+							<div class="title">
+								<h3 style="color: #00c0ff;">Professional Experience</h3>
+							</div>
+							<div class="resume_list">
+								<ul>
+									<li class="wow fadeInUp" data-wow-duration="1s">
+										<div class="list_inner">
+											<span class="icon"><img class="svg" src="img/svg/case-2.svg" alt="" /></span>
+											<div class="resume_title">
+												<h3>Ink AI <span>(Dec 2024 - Present)</span></h3>
+												<span class="company">AI Researcher | Delaware, USA</span>
+											</div>
+											<p class="text" style="text-align: justify;">
+												• <b>Digital Ink Recognition R&D:</b> Conducted research in digital ink
+												recognition with focus on handwriting generation using reference and target
+												text. Trained and evaluated custom models to mimic user handwriting.
+												<br>
+												• <b>Model Development and Accuracy Improvement:</b> Designed and trained RNN,
+												LSTM-based, Transformer-based, and Diffusion-based models on IAMonDB and Brush
+												Online datasets. Achieved an accuracy improvement from <b>89% to 93%</b> in
+												handwriting generation.
+												<br>
+												• <b>Semantic Similarity Search with Vector DBs:</b> Built a notebook content
+												search system using ChromaDB and OpenAI LLMs to enable context-aware retrieval
+												through embedding-based similarity.
+												<br>
+												• <b>System Integration and Backend Engineering:</b> Integrated model APIs using
+												FastAPI and RESTful interfaces. Supported deployment and service integration
+												with ReactJS frontend and Kotlin-based components.
+												<br>
+												• <b>MLOps and Infrastructure:</b> Containerized services with Docker and
+												utilized PyTorch and TensorFlow for training and serving models in production.
+												<br>
+												• <b>Startup Contribution:</b> Worked closely with the startup founded by
+												<b>Rich Miner (Co-founder of Android)</b>, contributing to R&D and operations
+												that helped raise <b>$100k</b> in funding.
+											</p>
+										</div>
+									</li>
+									<li class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
+										<div class="list_inner">
+											<span class="icon"><img class="svg" src="img/svg/case-2.svg" alt="" /></span>
+											<div class="resume_title">
+												<h3>CENTAIC – National Aerospace and Technology Park (NASTP) <span>(Mar 2024 –
+														Present)</span></h3>
+												<span class="company">Artificial Intelligence Developer (Research Officer) |
+													Rawalpindi, Pakistan</span>
+											</div>
+											<p class="text" style="text-align: justify;">
+												• <b>LLM Fine-Tuning and QA Systems:</b> Fine-tuned LLaMA 3.2 and other
+												foundation models (DeepSeek, Qwen2.5, GPT) using the QLoRA method on custom PDF
+												datasets, building domain-specific question-answering systems.
+												<br>
+												• <b>RAG System with Performance Boost:</b> Developed a personalized RAG
+												application using LangChain, Hugging Face, Qdrant, and Chrome integration.
+												Improved answer accuracy from <b>70% to 80%+</b> through enhanced context
+												retrieval techniques.
+												<br>
+												• <b>Offline LLM Deployment and Inference:</b> Deployed <b>70B GGUF LLMs</b>
+												locally using llama.cpp on <b>A100 GPUs</b> without internet. Integrated Open
+												WebUI to enable RAG-based chatbot functionality in disconnected environments.
+												<br>
+												• <b>AI Pipelines with Graph & Vector DBs:</b> Engineered hybrid pipelines using
+												LangChain and LangGraph, combining vector and graph databases for efficient,
+												structured knowledge retrieval.
+												<br>
+												• <b>Time Series Forecasting for Defense Systems:</b> Created a synthetic
+												dataset of <b>1 million records</b> to train LSTM models for forecasting and
+												anomaly detection. Boosted accuracy from <b>75% to 89%</b>.
+												<br>
+												• <b>Explainable AI in Anomaly Detection:</b> Built Random Forest models with
+												SHAP-based explainability to highlight <b>key threat indicators</b> for air
+												defense systems.
+												<br>
+												• <b>Computer Vision with YOLO:</b> Trained YOLOv8 and YOLOv9 models on custom
+												datasets and deployed them via Flask-based web apps for real-time object
+												detection.
+												<br>
+												• <b>Geospatial AI for Flight Pattern Simulation:</b> Used QGIS and ML to
+												analyze location-based data and simulate realistic flight paths using a hybrid
+												of rule-based and machine learning systems.
+											</p>
+										</div>
+									</li>
+									<li class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
+										<div class="list_inner">
+											<span class="icon"><img class="svg" src="img/svg/case-2.svg" alt="" /></span>
+											<div class="resume_title">
+												<h3>PanaceaLogics <span>(Nov 2023 – Mar 2024)</span></h3>
+												<span class="company">Artificial Intelligence Research Executive | Rawalpindi,
+													Pakistan</span>
+											</div>
+											<p class="text" style="text-align: justify;">
+												• <b>NLP Solutions:</b> Implemented NLP solutions utilizing LLMs, LayoutLMv2,
+												LayoutLMv3, LiLTv2, OCR, and GPT-2 technologies.
+												<br>
+												• <b>Document Extraction Systems:</b> Developed chatbots and document extraction
+												systems using BERT-based models and LangChain.
+												<br>
+												• <b>Proof of Concept (POC) Development:</b> Created POC applications with Flask
+												demonstrating NLP capabilities using OpenAI APIs.
+												<br>
+												• <b>Model Optimization:</b> Applied RAG techniques to LLaMA2 and LLaMA3 models,
+												optimized models using LORA and QLORA methods.
+												<br>
+												• <b>LLM Fine-tuning:</b> Fine-tuned LLMs for customized application needs and
+												enhanced performance.
+												<br>
+												• <b>Team Mentoring:</b> Mentored and guided junior engineers and interns,
+												fostering professional development in AI and NLP.
+											</p>
+										</div>
+									</li>
+									<li class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s">
+										<div class="list_inner">
+											<span class="icon"><img class="svg" src="img/svg/case-2.svg" alt="" /></span>
+											<div class="resume_title">
+												<h3>PanaceaLogics <span>(Jul 2023 – Oct 2023)</span></h3>
+												<span class="company">Artificial Intelligence Specialist | Rawalpindi,
+													Pakistan</span>
+											</div>
+											<p class="text" style="text-align: justify;">
+												• <b>Data Preparation:</b> Collected, labeled, and preprocessed fish datasets
+												for classification, segmentation, and object detection.
+												<br>
+												• <b>Fish BMI and Monitoring Systems:</b> Calculated fish BMI using image
+												analysis and implemented paddle wheel detection for monitoring through
+												stereo-vision techniques.
+												<br>
+												• <b>PDF-based NLP Retrieval System:</b> Developed a query-based search system
+												across uploaded PDFs to improve data analysis and retrieval efficiency.
+											</p>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- \PROFESSIONAL EXPERIENCE -->
+
+
+
+		
+		<!-- PUBLICATIONS -->
+		<div class="foliox_tm_section"  id="publication">
+			<div class="foliox_tm_resume">
+				<div class="container">
+					<!-- <div class="foliox_tm_main_title">
+								<span>Resume</span>
+								<h3>I Worked for Some Big Companies</h3>
+							</div> -->
+					<div class="wrapper">
+		
+						<!-- Publications Section -->
+						<div class="full-width">
+							<div class="title">
+								<h3 style="color: #00c0ff;">Publications</h3>
+							</div>
+							<div class="resume_list">
+								<ul>
+									<li class="wow fadeInUp" data-wow-duration="1s">
+										<div class="list_inner">
+											<span class="icon"><img class="svg" src="img/svg/publish.svg" alt="" /></span>
+											<div class="resume_title">
+												<h3>Enhanced Plant Species Identification using Metadata Fusion and Vision
+													Transformers <span>(2025)</span></h3>
+												<span class="company">Authors: Hassan Javed, Dr. Labiba Fahad, et al. | Under
+													Review</span>
+											</div>
+											<p class="text" style="text-align: justify;">
+												• <b>Research Paper:</b> A novel approach integrating Vision Transformer (ViT)
+												models with metadata fusion to enhance plant species classification accuracy to
+												<b>97.27%</b>, addressing challenges in distinguishing morphologically similar
+												species.
+												<br>
+												• <b>Key Contributions:</b> Developed an AI-driven methodology combining deep
+												visual feature extraction with geographical and taxonomic metadata,
+												demonstrating significant improvements over traditional CNN-based approaches.
+											</p>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- \ PUBLICATIONS -->
+
+
+
+				
+		<!-- CERTIFICATIONS -->
+		<div class="foliox_tm_section"  id="certification">
+			<div class="foliox_tm_resume">
+				<div class="container">
+					<!-- <div class="foliox_tm_main_title">
+										<span>Resume</span>
+										<h3>I Worked for Some Big Companies</h3>
+									</div> -->
+					<div class="wrapper">
+		
+
+							<!-- Certifications Section -->
+							<div class="full-width">
+								<div class="title">
+									<h3 style="color: #00c0ff;">Certifications</h3>
+								</div>
+								<div class="resume_list">
+			
+									<ul>
+										<li class="wow fadeInUp" data-wow-duration="1s">
+											<span class="icon"><img class="svg" src="img/svg/certificat1.svg" alt="" /></span>
+											<div class="list_inner certification-section">
+												<p class="text" style="text-align: justify;">
+													• Neural Networks and Deep Learning | DeepLearning.AI <span
+														class="certification-date">(Jul 2024)</span><br>
+													• Build Basic Generative Adversarial Networks (GANs) | DeepLearning.AI <span
+														class="certification-date">(Jan 2024)</span><br>
+													• Introduction to TensorFlow for AI, ML, and Deep Learning | DeepLearning.AI
+													<span class="certification-date">(Sep 2023)</span><br>
+													• MATLAB Certified | MathWorks <span class="certification-date">(Aug
+														2023)</span><br>
+													• What is Data Science? | Coursera <span class="certification-date">(Jul
+														2023)</span><br>
+													• Ethics in the Age of Generative AI | LinkedIn <span
+														class="certification-date">(Jul 2023)</span><br>
+													• Ask Questions to Make Data-Driven Decisions | Google <span
+														class="certification-date">(Jan 2023)</span><br>
+													• Data Manipulation with Pandas | DataCamp <span
+														class="certification-date">(Dec 2022)</span><br>
+													• Foundations: Data, Data, Everywhere | Google <span
+														class="certification-date">(Dec 2022)</span><br>
+													• Intermediate Python | DataCamp <span class="certification-date">(Dec
+														2022)</span><br>
+													• Introduction to Programming Using Python | DataCamp <span
+														class="certification-date">(Dec 2022)</span><br>
+													• Data Visualization | Kaggle <span class="certification-date">(Apr
+														2022)</span><br>
+													• Intermediate Machine Learning | Kaggle <span
+														class="certification-date">(Mar 2021)</span><br>
+													• Intro to Machine Learning | Kaggle <span class="certification-date">(Mar
+														2021)</span><br>
+													• Machine Learning | Stanford University <span
+														class="certification-date">(Mar 2021)</span><br>
+													• Microsoft Technology Associate: Introduction to Programming Using Python
+													<span class="certification-date">(Jan 2021)</span>
+												</p>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+		
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- \ CERTIFICATIONS -->
+
+
+
+		<!-- ACHIEVEMENTS & AWARDS -->
+		<div class="foliox_tm_section"  id="award">
+			<div class="foliox_tm_resume">
+				<div class="container">
+					<!-- <div class="foliox_tm_main_title">
+										<span>Resume</span>
+										<h3>I Worked for Some Big Companies</h3>
+									</div> -->
+					<div class="wrapper">
+		
+						<!-- Achievements & Awards Section -->
+						<div class="full-width">
+							<div class="title">
+								<h3 style="color: #00c0ff;">Achievements & Awards</h3>
+							</div>
+							<div class="resume_list">
+								<ul>
+									<li class="wow fadeInUp" data-wow-duration="1s">
+										<div class="list_inner">
+											<span class="icon"><img class="svg" src="img/svg/award.svg" alt="" /></span>
+											<div class="resume_title">
+												<h3>Industrial Exhibition (MUST) <span>(2021)</span></h3>
+												<span class="company">Control Automotive and Robotics Lab Participation
+													Shield</span>
+											</div>
+											<p class="text" style="text-align: justify;">
+												• <b>Recognition:</b> Honored as the <b>first student team</b> from University
+												of Kotli (AJK) to present our Intelligent Waste Management System at this
+												prestigious event, receiving a participation shield for demonstrating innovative
+												application of computer vision techniques.
+											</p>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+		
+					
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="foliox_tm_section"  id="activities">
+			<div class="foliox_tm_resume">
+				<div class="container">
+					<!-- <div class="foliox_tm_main_title">
+												<span>Resume</span>
+												<h3>I Worked for Some Big Companies</h3>
+											</div> -->
+					<div class="wrapper">
+						<!-- Extracurricular Activities Section -->
+						<div class="full-width">
+							<div class="title">
+								<h3 style="color: #00c0ff;">Extracurricular Activities</h3>
+							</div>
+							<div class="resume_list">
+								<ul>
+									<li class="wow fadeInUp" data-wow-duration="1s">
+										<div class="list_inner">
+											<span class="icon"><img class="svg" src="img/svg/volunteer1.svg" alt="" /></span>
+											<div class="resume_title">
+												<h3>CENTAIC – National Aerospace and Technology Park (NASTP) <span>(June 2024 -
+														Aug 2024)</span></h3>
+												<span class="company">AI Education Lead, Mentorship Program | Rawalpindi,
+													Pakistan</span>
+											</div>
+											<p class="text" style="text-align: justify;">
+												• <b>Technical Instruction:</b> Developed and delivered comprehensive <b>3-month
+													curriculum</b> on Machine Learning and Deep Learning fundamentals to a
+												cohort of interns, covering both theoretical foundations and practical
+												implementations.
+												<br>
+												• <b>Mathematical Foundations:</b> Guided students through essential
+												mathematical concepts underpinning ML/DL algorithms, including linear algebra,
+												calculus, probability theory, and statistical methods.
+												<br>
+												• <b>Hands-on Programming:</b> Facilitated intensive PyTorch workshops, enabling
+												participants to implement neural networks from scratch and deploy working AI
+												solutions.
+												<br>
+												• <b>Knowledge Transfer:</b> Bridged theoretical knowledge with practical
+												applications, empowering the next generation of AI practitioners within
+												Pakistan's developing aerospace technology sector.
+											</p>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+		
+		
+					</div>
+				</div>
+			</div>
+		</div>
+
+		
+		<!-- \ ACHIEVEMENTS & AWARDS -->
+
+
+
 
 		<!-- TESTIMONIALS -->
 		<div class="foliox_tm_section">
@@ -956,8 +1088,8 @@
 			<div class="foliox_tm_news">
 				<div class="container">
 					<div class="foliox_tm_main_title">
-						<span>Blog</span>
-						<h3>Latest Blog Posts</h3>
+						<!-- <span>Blog</span> -->
+						<h3 style="color: #00c0ff;">Latest Blog Posts</h3>
 					</div>
 					<div class="news_list">
 						<ul>
@@ -1118,8 +1250,8 @@
 			</div>
 		</div>
 		<!-- /NEWS -->
-<!-- SUBSCRIBE -->
-<div class="foliox_tm_section" id="portfolio">
+<!-- PORTFLOLIO PART  -->
+<!-- <div class="foliox_tm_section" id="portfolio">
 	<div class="foliox_tm_portfolio">
 		<div class="container">
 			<div class="foliox_tm_main_title">
@@ -1177,108 +1309,108 @@
 			</div>
 		</div>
 	</div>
+</div> -->
+<!-- PORTFLOLIO PART  -->
+
+<!-- CONTACT -->
+<div class="foliox_tm_section" id="contact">
+    <div class="foliox_tm_contact">
+        <div class="container">
+            <div class="foliox_tm_main_title">
+                <!-- <span>Contact</span> -->
+                <h3 style="color: #00c0ff;">Let's Connect With Me</h3>
+            </div>
+            <div class="contact_inner">
+                <div class="left wow fadeInLeft" data-wow-duration="1s">
+                    <ul>
+                        <li>
+                            <div class="list_inner">
+                                <div class="icon">
+                                    <i class="icon-location"></i>
+                                </div>
+                                <div class="short">
+                                    <h3>Address</h3>
+                                    <span>Street # 4 Shah Jeewan Colony Girja road Rawalpindi</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list_inner">
+                                <div class="icon">
+                                    <i class="icon-mail-1"></i>
+                                </div>
+                                <div class="short">
+                                    <h3>Email</h3>
+                                    <span><a href="mailto:hassanjaved917127@gmail.com">hassanjaved917127@gmail.com</a></span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list_inner">
+                                <div class="icon">
+                                    <i class="icon-phone"></i>
+                                </div>
+                                <div class="short">
+                                    <h3>Phone</h3>
+                                    <span>+92344 3754942</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="right wow fadeInRight" data-wow-duration="1s">
+                    <div class="buttons-container" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 20px;">
+                        <!-- <h3>Connect With Me</h3> -->
+                        <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+                            <div class="foliox_tm_button" style="margin: 5px;">
+                                <a href="javascript:void(0);" onclick="copyEmail()" style="display: flex; align-items: center;">
+                                    <i class="icon-mail-1" style="margin-right: 10px;"></i>
+                                    <span>Contact Me</span>
+                                </a>
+                            </div>
+                            <div class="foliox_tm_button" style="margin: 5px;">
+                                <a href="https://github.com/hassan883" target="_blank" style="display: flex; align-items: center; background-color: #24292e;">
+                                    <i class="icon-github" style="margin-right: 10px;"></i>
+                                    <span>GitHub</span>
+                                </a>
+                            </div>
+                            <div class="foliox_tm_button" style="margin: 5px;">
+                                <a href="https://www.linkedin.com/in/hassanjaved4/" target="_blank" style="display: flex; align-items: center; background-color: #0077b5;">
+                                    <i class="icon-linkedin" style="margin-right: 10px;"></i>
+                                    <span>LinkedIn</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-		<!-- CONTACT -->
-		<div class="foliox_tm_section" id="contact">
-			<div class="foliox_tm_contact">
-				<div class="container">
-					<div class="foliox_tm_main_title">
-						<span>Contact</span>
-						<h3>I Want to Hear from You</h3>
-					</div>
-					<div class="contact_inner">
-						<div class="left wow fadeInLeft" data-wow-duration="1s">
-							<ul>
-								<li>
-									<div class="list_inner">
-										<div class="icon">
-											<i class="icon-location"></i>
-										</div>
-										<div class="short">
-											<h3>Address</h3>
-											<span>Street # 4 Shah Jeewan Colony Girja road Rawalpindi</span>
-										</div>
-									</div>
-								</li>
-								<li>
-									<div class="list_inner">
-										<div class="icon">
-											<i class="icon-mail-1"></i>
-										</div>
-										<div class="short">
-											<h3>Email</h3>
-											<span><a href="#">hassanjaved917127@gmail.com</a></span>
-										</div>
-									</div>
-								</li>
-								<li>
-									<div class="list_inner">
-										<div class="icon">
-											<i class="icon-phone"></i>
-										</div>
-										<div class="short">
-											<h3>Phone</h3>
-											<span>+92344 3754942</span>
-										</div>
-									</div>
-								</li>
-							</ul>
-						</div>
-						<div class="right wow fadeInRight" data-wow-duration="1s">
-							<div class="fields">
-								<form action="/" method="post" class="contact_form" id="contact_form"
-									autocomplete="off">
-									<div class="returnmessage"
-										data-success="Your message has been received, We will contact you soon."></div>
-									<div class="empty_notice"><span>Please Fill Required Fields</span></div>
-									<div class="input_list">
-										<ul>
-											<li><input id="name" type="text" placeholder="Your Name" /></li>
-											<li><input id="email" type="text" placeholder="Your Email" /></li>
-											<li><input id="phone" type="number" placeholder="Your Phone" /></li>
-											<li><input id="subject" type="text" placeholder="Subject" /></li>
-										</ul>
-									</div>
-									<div class="message_area">
-										<textarea id="message" placeholder="Write your message here"></textarea>
-									</div>
-									<div class="foliox_tm_button">
-										<a id="send_message" href="#"><span>Submit Now</span></a>
-									</div>
 
-									<!-- If you want to change mail address to yours please open modal.php folder and go to the line 4 -->
+<div id="email_copied" style="position: fixed; bottom: 30px; left: 50%; transform: translateX(-50%) translateY(100px); padding: 10px 20px; background-color: #333; color: white; border-radius: 5px; opacity: 0; transition: all 0.3s ease; z-index: 1000;">
+    Email copied to clipboard!
+</div>
 
-								</form>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- /CONTACT -->
+<script>
+function copyEmail() {
+    const email = "hassanjaved917127@gmail.com";
+    navigator.clipboard.writeText(email);
+    
+    // Show the notification
+    const notification = document.getElementById('email_copied');
+    notification.style.transform = "translateX(-50%) translateY(0)";
+    notification.style.opacity = "1";
+    
+    // Hide the notification after 3 seconds
+    setTimeout(function() {
+        notification.style.transform = "translateX(-50%) translateY(100px)";
+        notification.style.opacity = "0";
+    }, 3000);
+}
+</script>
 
-		
 
-		<!-- <div class="foliox_tm_section">
-			<div class="foliox_tm_subscribe">
-				<div class="container">
-					<div class="inner tilt-effect">
-						<div class="left wow fadeInLeft" data-wow-duration="1s">
-							<span class="subtitle">Subscribe Now</span>
-							<h3 class="title">Get My Newsletter</h3>
-							<p class="text">Get latest news, tips and trics in your inbox</p>
-						</div>
-						<div class="right wow fadeInRight" data-wow-duration="1s">
-							<div class="field">
-								<input type="text" placeholder="Your email here">
-								<input type="submit" value="Send Now" />
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div> -->
-		<!-- /SUBSCRIBE -->
 
 		<!-- COPYRIGHT -->
 		<div class="foliox_tm_section">
