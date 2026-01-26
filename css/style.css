@@ -1,8 +1,131 @@
 @charset "utf-8";
 
-/*	Copyright (c) 2022 Marketify
-/*	Author: Marketify
-/*	This file is made for CURRENT TEMPLATE
+/*	Personal Portfolio - Hassan Javed
+/*	AI Developer and Researcher
+/*	Updated 2025
+
+/* Modern Visual Enhancements */
+:root {
+    --gradient-primary: linear-gradient(135deg, #00c0ff 0%, #6c63ff 100%);
+    --gradient-accent: linear-gradient(135deg, #432d92 0%, #1e1345 100%);
+    --shadow-soft: 0 10px 40px rgba(0, 192, 255, 0.15);
+    --shadow-card: 0 8px 32px rgba(0, 0, 0, 0.3);
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Enhanced Button Hover Effects */
+.foliox_tm_button a {
+    transition: var(--transition-smooth);
+    box-shadow: 0 4px 15px rgba(0, 192, 255, 0.3);
+}
+
+.foliox_tm_button a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 192, 255, 0.4);
+}
+
+/* Enhanced Section Titles */
+.foliox_tm_main_title h3 {
+    position: relative;
+    display: inline-block;
+}
+
+.foliox_tm_main_title h3::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: var(--gradient-primary);
+    border-radius: 2px;
+}
+
+/* Enhanced Resume List Items */
+.resume_list ul li .list_inner {
+    transition: var(--transition-smooth);
+    border-radius: 12px;
+    padding: 25px 25px 25px 107px;
+    background: rgba(58, 43, 113, 0.3);
+    margin-bottom: 10px;
+}
+
+.resume_list ul li .list_inner:hover {
+    background: rgba(58, 43, 113, 0.5);
+    transform: translateX(5px);
+}
+
+/* Enhanced Counter Cards */
+.foliox_tm_counter .counter_list ul li .list_inner {
+    transition: var(--transition-smooth);
+    border: 1px solid transparent;
+}
+
+.foliox_tm_counter .counter_list ul li .list_inner:hover {
+    border-color: rgba(0, 192, 255, 0.3);
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-soft);
+}
+
+/* Enhanced Skills Section */
+.progress_inner {
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.progress_inner:last-child {
+    border-bottom: none;
+}
+
+/* Enhanced News/Blog Cards */
+.foliox_tm_news .news_list ul li .list_inner {
+    transition: var(--transition-smooth);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.foliox_tm_news .news_list ul li .list_inner:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-card);
+}
+
+/* Enhanced Testimonials */
+.foliox_tm_testimonials .text p {
+    position: relative;
+    padding: 0 20px;
+}
+
+/* Enhanced Contact Section Icons */
+.foliox_tm_contact .left .icon {
+    transition: var(--transition-smooth);
+}
+
+.foliox_tm_contact .left .list_inner:hover .icon {
+    transform: scale(1.1);
+    box-shadow: 0 8px 25px rgba(0, 192, 255, 0.4);
+}
+
+/* Smooth Scrollbar Enhancement */
+* {
+    scroll-behavior: smooth;
+}
+
+/* Publication Badge Styling */
+.company {
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 16px;
+}
+
+/* Enhanced Partners Section */
+.foliox_tm_partners .partners_list {
+    transition: var(--transition-smooth);
+}
+
+.foliox_tm_partners .partners_list:hover {
+    box-shadow: var(--shadow-soft);
+}
 
 
 01)	FOLIOX BASE
