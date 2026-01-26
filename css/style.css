@@ -608,6 +608,51 @@ button:focus {
 }
 
 /* ============================================
+   THEME-COLORED BOLD TEXT IN ALL SECTIONS
+   ============================================ */
+/* About Section */
+.foliox_tm_about .text b {
+    color: var(--color-primary);
+}
+
+/* Research Experience Section */
+.foliox_tm_resume .text b {
+    color: var(--color-primary);
+}
+
+/* Professional Experience Section */
+.resume_list .text b {
+    color: var(--color-primary);
+}
+
+/* Publication Section */
+.foliox_tm_resume .text b {
+    color: var(--color-primary);
+}
+
+/* Awards & Achievements Section */
+.foliox_tm_resume .text b {
+    color: var(--color-primary);
+}
+
+/* Extracurricular Activities Section */
+.foliox_tm_resume .text b {
+    color: var(--color-primary);
+}
+
+/* Certifications Section */
+.foliox_tm_certifications .cert_name {
+    color: #fff;
+}
+
+/* General - All paragraph bold text in content sections */
+.list_inner .text b,
+.foliox_tm_about .right .text b,
+.foliox_tm_features .text b {
+    color: var(--color-primary);
+}
+
+/* ============================================
    HERO SECTION Z-INDEX FIX & ENHANCEMENTS
    ============================================ */
 .foliox_tm_hero .content {
