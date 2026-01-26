@@ -607,6 +607,254 @@ button:focus {
     font-size: 16px;
 }
 
+/* ============================================
+   HERO SECTION Z-INDEX FIX & ENHANCEMENTS
+   ============================================ */
+.foliox_tm_hero .content {
+    position: relative;
+}
+
+.foliox_tm_hero .left {
+    position: relative;
+    z-index: 10;
+}
+
+.foliox_tm_hero .right {
+    position: relative;
+    z-index: 5;
+}
+
+/* Hero Buttons Container - Ensure visibility */
+.hero-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    z-index: 20 !important;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.hero-buttons .foliox_tm_button {
+    position: relative;
+    z-index: 20;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
+
+.hero-buttons .foliox_tm_button a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    position: relative;
+    z-index: 25;
+    padding: 15px 28px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    border: 2px solid transparent;
+    backdrop-filter: blur(10px);
+}
+
+.hero-buttons .foliox_tm_button a i {
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+/* Enhanced Hero Button Styles */
+.hero-buttons .foliox_tm_button a:hover {
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 12px 35px rgba(0, 192, 255, 0.4);
+}
+
+/* Contact Button */
+.hero-buttons .foliox_tm_button:first-child a {
+    background: var(--gradient-primary);
+    border-color: transparent;
+}
+
+/* GitHub Button */
+.hero-buttons .foliox_tm_button:nth-child(2) a {
+    background: linear-gradient(135deg, #24292e 0%, #1a1e22 100%);
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.hero-buttons .foliox_tm_button:nth-child(2) a:hover {
+    background: linear-gradient(135deg, #2d333b 0%, #24292e 100%);
+    box-shadow: 0 12px 35px rgba(36, 41, 46, 0.5);
+}
+
+/* LinkedIn Button */
+.hero-buttons .foliox_tm_button:nth-child(3) a {
+    background: linear-gradient(135deg, #0077b5 0%, #005885 100%);
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.hero-buttons .foliox_tm_button:nth-child(3) a:hover {
+    background: linear-gradient(135deg, #0088cc 0%, #0077b5 100%);
+    box-shadow: 0 12px 35px rgba(0, 119, 181, 0.5);
+}
+
+/* Medium Button - Fixed visibility */
+.hero-buttons .foliox_tm_button:nth-child(4) a {
+    background: linear-gradient(135deg, #1a1a1a 0%, #000000 100%);
+    border-color: rgba(255, 255, 255, 0.15);
+}
+
+.hero-buttons .foliox_tm_button:nth-child(4) a:hover {
+    background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
+    border-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.6);
+}
+
+/* Hero Image Enhancement */
+.foliox_tm_hero .right img {
+    filter: drop-shadow(0 20px 50px rgba(0, 192, 255, 0.2));
+    transition: var(--transition-smooth);
+}
+
+.foliox_tm_hero .right img:hover {
+    filter: drop-shadow(0 25px 60px rgba(0, 192, 255, 0.3));
+    transform: scale(1.02);
+}
+
+/* Hero Name Glow Enhancement */
+.foliox_tm_hero .name {
+    text-shadow: 0 0 60px rgba(0, 192, 255, 0.3);
+}
+
+.foliox_tm_hero .name span {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    filter: drop-shadow(0 0 30px rgba(0, 192, 255, 0.5));
+}
+
+/* Hero Job Title Enhancement */
+.foliox_tm_hero .job {
+    background: linear-gradient(90deg, rgba(255,255,255,0.9) 0%, rgba(180,175,198,0.8) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* ============================================
+   ENHANCED HEADER/NAVIGATION
+   ============================================ */
+.foliox_tm_header {
+    background: rgba(10, 10, 26, 0.85);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.foliox_tm_header .menu ul li a {
+    position: relative;
+    transition: var(--transition-fast);
+}
+
+.foliox_tm_header .menu ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: var(--gradient-primary);
+    transition: var(--transition-smooth);
+    transform: translateX(-50%);
+}
+
+.foliox_tm_header .menu ul li a:hover::after,
+.foliox_tm_header .menu ul li.current a::after {
+    width: 100%;
+}
+
+/* ============================================
+   ENHANCED BODY & BACKGROUND
+   ============================================ */
+body {
+    background: linear-gradient(180deg, #0a0a1a 0%, #1e1345 50%, #0a0a1a 100%);
+    background-attachment: fixed;
+}
+
+/* Subtle animated background gradient */
+.foliox_tm_all_wrap::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:
+        radial-gradient(ellipse at 20% 20%, rgba(0, 192, 255, 0.08) 0%, transparent 50%),
+        radial-gradient(ellipse at 80% 80%, rgba(108, 99, 255, 0.08) 0%, transparent 50%);
+    pointer-events: none;
+    z-index: -1;
+}
+
+/* ============================================
+   ENHANCED MOBILE MENU
+   ============================================ */
+.foliox_tm_mobile_menu {
+    background: rgba(10, 10, 26, 0.95);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.foliox_tm_mobile_menu .dropdown {
+    background: rgba(10, 10, 26, 0.98);
+    backdrop-filter: blur(20px);
+}
+
+/* ============================================
+   RESPONSIVE HERO BUTTONS FIX
+   ============================================ */
+@media (max-width: 1200px) {
+    .hero-buttons {
+        gap: 10px;
+    }
+
+    .hero-buttons .foliox_tm_button a {
+        padding: 12px 20px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-buttons {
+        flex-direction: column !important;
+        align-items: stretch !important;
+        width: 100%;
+        max-width: 280px;
+        margin: 0 auto;
+    }
+
+    .hero-buttons .foliox_tm_button {
+        width: 100% !important;
+        margin: 0 0 12px 0 !important;
+    }
+
+    .hero-buttons .foliox_tm_button:last-child {
+        margin-bottom: 0 !important;
+    }
+
+    .hero-buttons .foliox_tm_button a {
+        width: 100%;
+        justify-content: center;
+        padding: 14px 25px;
+    }
+
+    .foliox_tm_hero .left {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 
 01)	FOLIOX BASE
 02) FOLIOX MOBILE MENU
