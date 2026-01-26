@@ -62,9 +62,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, #0a0a1a 0%, #1e1345 50%, #0a0a1a 100%);
-    background-size: 400% 400%;
-    animation: gradientShift 3s ease infinite;
+    background: linear-gradient(180deg, #0a0a1a 0%, #1e1345 50%, #0a0a1a 100%);
+    background-attachment: fixed;
 }
 
 @keyframes gradientShift {
@@ -352,36 +351,33 @@
 }
 
 /* ============================================
-   ENHANCED BUTTONS
+   ENHANCED BUTTONS - Clean Modern Style
    ============================================ */
 .foliox_tm_button a {
+    display: inline-block;
+    background-color: transparent;
+    border: 1px solid var(--color-primary);
+    border-radius: 4px;
+    padding: 1.25rem 1.75rem;
+    font-size: 14px;
+    font-family: var(--font-family-main);
+    font-weight: 500;
+    line-height: 1;
+    text-decoration: none;
+    color: var(--color-primary);
     transition: var(--transition-smooth);
-    box-shadow: 0 4px 15px rgba(0, 192, 255, 0.3);
     position: relative;
     overflow: hidden;
 }
 
-.foliox_tm_button a::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 0;
-    height: 0;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
-    transform: translate(-50%, -50%);
-    transition: width 0.6s ease, height 0.6s ease;
-}
-
 .foliox_tm_button a:hover {
+    background-color: rgba(0, 192, 255, 0.1);
     transform: translateY(-3px);
-    box-shadow: 0 8px 30px rgba(0, 192, 255, 0.5);
+    box-shadow: 0 10px 30px rgba(0, 192, 255, 0.2);
 }
 
-.foliox_tm_button a:hover::after {
-    width: 300px;
-    height: 300px;
+.foliox_tm_button a:active {
+    transform: translateY(-1px);
 }
 
 /* ============================================
@@ -560,6 +556,18 @@
     box-shadow: var(--shadow-glow);
 }
 
+/* Contact Section Button Icons */
+.foliox_tm_contact .foliox_tm_button a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.foliox_tm_contact .foliox_tm_button a i {
+    font-size: 16px;
+    color: var(--color-primary);
+}
+
 /* ============================================
    ENHANCED PARTNERS SECTION
    ============================================ */
@@ -664,28 +672,25 @@ button:focus {
     z-index: 10;
 }
 
-.foliox_tm_hero .right {
-    position: relative;
-    z-index: 5;
-}
-
-/* Hero Buttons Container - Ensure visibility */
+/* Hero Buttons Container */
 .hero-buttons {
-    display: flex;
-    flex-direction: row;
+    display: inline-flex !important;
+    flex-direction: row !important;
     justify-content: flex-start;
     align-items: center;
     position: relative;
-    z-index: 20 !important;
-    flex-wrap: wrap;
-    gap: 12px;
+    z-index: 20;
+    flex-wrap: nowrap !important;
+    gap: 15px;
+    margin-top: 50px;
 }
 
 .hero-buttons .foliox_tm_button {
     position: relative;
     z-index: 20;
-    margin-right: 0 !important;
-    margin-left: 0 !important;
+    width: auto !important;
+    float: none !important;
+    display: inline-block;
 }
 
 .hero-buttons .foliox_tm_button a {
@@ -693,42 +698,32 @@ button:focus {
     align-items: center;
     justify-content: center;
     white-space: nowrap;
-    position: relative;
-    z-index: 25;
-    padding: 10px 20px;
-    font-size: 13px;
+    background-color: transparent;
+    border: 1px solid var(--color-primary);
+    border-radius: 4px;
+    padding: 1.25rem 1.75rem;
+    font-size: 14px;
     font-weight: 500;
-    letter-spacing: 0.3px;
-    border-radius: 6px;
-    transition: all 0.3s ease;
+    line-height: 1;
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: var(--transition-smooth);
 }
 
 .hero-buttons .foliox_tm_button a i {
-    margin-right: 8px;
-    font-size: 14px;
-}
-
-/* Enhanced Hero Button Styles - Transparent with 3D Pop Effect */
-.hero-buttons .foliox_tm_button a {
-    background: transparent;
-    border: 1px solid rgba(0, 192, 255, 0.5);
-    color: #fff;
-    box-shadow: 0 2px 0 rgba(0, 192, 255, 0.3);
-    transform: translateY(0);
+    margin-right: 10px;
+    font-size: 16px;
+    color: var(--color-primary);
 }
 
 .hero-buttons .foliox_tm_button a:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 25px rgba(0, 192, 255, 0.4), 0 4px 0 rgba(0, 192, 255, 0.5);
+    background-color: rgba(0, 192, 255, 0.1);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 192, 255, 0.2);
 }
 
 .hero-buttons .foliox_tm_button a:active {
     transform: translateY(-1px);
-    box-shadow: 0 2px 10px rgba(0, 192, 255, 0.3), 0 1px 0 rgba(0, 192, 255, 0.4);
-}
-
-.hero-buttons .foliox_tm_button a i {
-    color: var(--color-primary);
 }
 
 /* Hero Greeting and Description Styles */
@@ -750,6 +745,18 @@ button:focus {
 
 .hero-description b {
     color: var(--color-primary);
+    font-weight: 600;
+}
+
+/* Technology Section - Full Width */
+.tech-section {
+    width: 100%;
+    margin-top: 50px;
+    text-align: left;
+}
+
+.tech-section .text {
+    text-align: left;
 }
 
 /* Technology Grid in About Section */
@@ -758,6 +765,7 @@ button:focus {
     flex-wrap: wrap;
     gap: 10px;
     margin-bottom: 20px;
+    justify-content: flex-start;
 }
 
 .tech-item {
@@ -799,17 +807,6 @@ button:focus {
     }
 }
 
-/* Hero Image Enhancement */
-.foliox_tm_hero .right img {
-    filter: drop-shadow(0 20px 50px rgba(0, 192, 255, 0.2));
-    transition: var(--transition-smooth);
-}
-
-.foliox_tm_hero .right img:hover {
-    filter: drop-shadow(0 25px 60px rgba(0, 192, 255, 0.3));
-    transform: scale(1.02);
-}
-
 /* Hero Name Glow Enhancement */
 .foliox_tm_hero .name {
     text-shadow: 0 0 60px rgba(0, 192, 255, 0.3);
@@ -835,7 +832,7 @@ button:focus {
    ENHANCED HEADER/NAVIGATION
    ============================================ */
 .foliox_tm_header {
-    background: rgba(30, 19, 69, 0.9);
+    background: rgba(10, 10, 26, 0.95);
     backdrop-filter: blur(20px);
     border-bottom: 1px solid rgba(0, 192, 255, 0.1);
 }
@@ -900,13 +897,13 @@ body {
    ENHANCED MOBILE MENU
    ============================================ */
 .foliox_tm_mobile_menu {
-    background: rgba(10, 10, 26, 0.95);
+    background: #0a0a1a;
     backdrop-filter: blur(20px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .foliox_tm_mobile_menu .dropdown {
-    background: rgba(10, 10, 26, 0.98);
+    background: #0a0a1a;
     backdrop-filter: blur(20px);
 }
 
@@ -915,12 +912,13 @@ body {
    ============================================ */
 @media (max-width: 1200px) {
     .hero-buttons {
-        gap: 8px;
+        gap: 12px;
+        margin-top: 40px;
     }
 
     .hero-buttons .foliox_tm_button a {
-        padding: 9px 18px;
-        font-size: 12px;
+        padding: 1rem 1.5rem;
+        font-size: 13px;
     }
 }
 
@@ -940,15 +938,15 @@ body {
     }
 
     .hero-buttons .foliox_tm_button a {
-        padding: 10px 18px;
-        font-size: 12px;
+        padding: 1rem 1.5rem;
+        font-size: 13px;
     }
 
     .foliox_tm_hero .left {
-        text-align: center;
+        text-align: left;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
     }
 }
 
@@ -1152,7 +1150,8 @@ a{
 html {
 	overflow-x: hidden;
 	padding: 0px;
-	margin: 0px
+	margin: 0px;
+	background: #0a0a1a;
 }
 body{
 	overflow-x: hidden;
@@ -1221,7 +1220,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .container{
-	max-width: 1400px;
+	max-width: 1600px;
 	width:100%;
 	margin-left: auto;
 	margin-right: auto;
@@ -1277,7 +1276,7 @@ h6 { font-size: 16px; }
     width: 50%;
     height: 100%;
     z-index: -1;
-    background-color: #fff;
+    background-color: #0a0a1a;
     -webkit-transition: all 0.3s ease 0s;
     -o-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
@@ -1402,7 +1401,7 @@ h6 { font-size: 16px; }
 	height: auto;
 	float: left;
 	clear: both;
-	background-color: #1e1345;
+	background-color: #0a0a1a;
 	border-bottom: 1px solid rgba(255,255,255,.1);
 	padding: 10px 20px 10px 20px;
 }
@@ -1437,7 +1436,7 @@ h6 { font-size: 16px; }
 	height: auto;
 	clear: both;
 	float: left;
-	background-color: #1e1345;
+	background-color: #0a0a1a;
 	display: none;
 }
 .foliox_tm_mobile_menu .dropdown .dropdown_inner{
@@ -1495,7 +1494,7 @@ h6 { font-size: 16px; }
 	        transition: all .3s ease;
 }
 .foliox_tm_header.animate{
-	background-color: #1e1345;
+	background-color: #0a0a1a;
 	padding: 30px 0px;
 }
 .foliox_tm_header .inner{
@@ -1598,9 +1597,20 @@ h6 { font-size: 16px; }
 	height: 100vh;
 	display: flex;
 	align-items: center;
+	justify-content: flex-start;
 }
 .foliox_tm_hero .left{
-	width:50%;
+	width:100%;
+	max-width: 100%;
+	text-align: left;
+}
+.foliox_tm_hero .left .hero-greeting,
+.foliox_tm_hero .left .name,
+.foliox_tm_hero .left .job {
+	text-align: left;
+}
+.foliox_tm_hero .left .hero-description {
+	text-align: justify;
 }
 .foliox_tm_hero .name{
 	font-size: 120px;
@@ -1624,56 +1634,34 @@ h6 { font-size: 16px; }
 	float: left;
 }
 .foliox_tm_button a{
-	font-family: var(--font-family-extra);
-	color: #fff;
+	font-family: var(--font-family-main);
+	color: var(--color-primary);
 	display: inline-block;
-	background-color: var(--extra-color);
-	padding: 18px 43px;
-	border-radius: 50px;
+	background-color: transparent;
+	border: 1px solid var(--color-primary);
+	padding: 1.25rem 1.75rem;
+	border-radius: 4px;
 	overflow: hidden;
 	position: relative;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 1;
+	text-decoration: none;
+	transition: var(--transition-smooth);
 }
 .foliox_tm_button a span{
 	position: relative;
 	z-index: 2;
-	
-	-webkit-transition: all .3s ease;
-	   -moz-transition: all .3s ease;
-	    -ms-transition: all .3s ease;
-	     -o-transition: all .3s ease;
-	        transition: all .3s ease;
+	transition: all .3s ease;
 }
-.foliox_tm_button a:before{
-	position: absolute;
-	content: "";
-	left: -10px;
-	right: -10px;
-	bottom: -10px;
-	top: -10px;
-	background-color: #fff;
-	transform: translateY(100%);
-	
-	-webkit-transition: all .3s ease;
-	   -moz-transition: all .3s ease;
-	    -ms-transition: all .3s ease;
-	     -o-transition: all .3s ease;
-	        transition: all .3s ease;
-}
-.foliox_tm_button a:hover:before{
-	transform: translateY(0);
+.foliox_tm_button a:hover{
+	background-color: rgba(0, 192, 255, 0.1);
+	transform: translateY(-3px);
+	box-shadow: 0 10px 30px rgba(0, 192, 255, 0.2);
 }
 .foliox_tm_button a:hover span{
-	color: #000;
+	color: var(--color-primary);
 }
-.foliox_tm_hero .right{
-	width:50%;
-	padding-left: 80px;
-}
-.foliox_tm_hero .right img{
-	max-width: 600px;
-	max-height: 600px;
-}
-
 /*---------------------------------------------------*/
 /*	05) FOLIOX FEATURES
 /*---------------------------------------------------*/
@@ -1770,6 +1758,8 @@ h6 { font-size: 16px; }
 .foliox_tm_about .big_image img{
 	max-width: 425px;
 	max-height: 510px;
+	mix-blend-mode: multiply;
+	border-radius: 20px;
 }
 .foliox_tm_about .small_image{
 	position: absolute;
@@ -1797,7 +1787,8 @@ h6 { font-size: 16px; }
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-	border-radius: 10px;
+	border-radius: 20px;
+	mix-blend-mode: multiply;
 }
 .foliox_tm_about .badge{
 	width: 120px;
@@ -1911,7 +1902,8 @@ h6 { font-size: 16px; }
 	color: var(--main-color);
 }
 .foliox_tm_about .foliox_tm_button a{
-	padding: 13px 43px;
+	padding: 1.25rem 1.75rem;
+	margin-top: 30px;
 }
 
 /*---------------------------------------------------*/
@@ -3382,12 +3374,216 @@ input[type=number] {
 	color: #fff;
 }
 
+/* ============================================
+   ABOUT SECTION - Image on Right with Tech Grid Below
+   ============================================ */
+.foliox_tm_about .wrapper {
+    flex-direction: row;
+}
+
+.foliox_tm_about .right {
+    padding-left: 0;
+    padding-right: 50px;
+}
+
+.foliox_tm_about .left {
+    padding-left: 50px;
+}
+
+.foliox_tm_about .big_image {
+    float: none;
+}
+
+/* CV Download Buttons Container */
+.cv-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.cv-buttons .foliox_tm_button {
+    width: auto;
+}
+
+/* ============================================
+   ARROW LIST ICONS - All Lists
+   ============================================ */
+/* Resume/Experience section list items */
+.foliox_tm_resume .text {
+    position: relative;
+}
+
+/* Certification list items */
+.cert_list li {
+    position: relative;
+    padding-left: 20px;
+}
+
+.cert_list li::before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    top: 12px;
+    color: var(--color-primary);
+    font-size: 14px;
+    line-height: 1;
+}
+
+/* News popup list items */
+.news_popup_informations ul li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 8px;
+}
+
+.news_popup_informations ul li::before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--color-primary);
+    font-size: 14px;
+}
+
+/* General unordered lists in content areas */
+.foliox_tm_about .right ul:not(.tech-grid) li,
+.list_inner .text ul li {
+    position: relative;
+    padding-left: 20px;
+    list-style: none;
+}
+
+.foliox_tm_about .right ul:not(.tech-grid) li::before,
+.list_inner .text ul li::before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--color-primary);
+    font-size: 14px;
+}
+
+/* ============================================
+   PAGE LOADING BACKGROUND FIX
+   ============================================ */
+html, body {
+    background: #0a0a1a !important;
+}
+
+/* Fix About Section Image - Add Effects */
+.foliox_tm_about .left {
+    position: relative;
+    overflow: visible !important;
+}
+
+.foliox_tm_about .big_image {
+    position: relative;
+    display: inline-block;
+    margin: 25px;
+}
+
+/* Bounding box - centered behind image */
+.foliox_tm_about .big_image::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 1px;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #00c0ff;
+    border-radius: 20px;
+    z-index: 0;
+    transition: all 0.4s ease;
+    pointer-events: none;
+}
+
+/* Glow effect */
+.foliox_tm_about .big_image::after {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    right: -20px;
+    bottom: -20px;
+    background: radial-gradient(ellipse at center, rgba(0, 192, 255, 0.2) 0%, transparent 70%);
+    border-radius: 30px;
+    z-index: 0;
+    filter: blur(20px);
+    animation: glowPulse 3s ease-in-out infinite;
+    pointer-events: none;
+}
+
+@keyframes glowPulse {
+    0%, 100% {
+        opacity: 0.5;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+}
+
+.foliox_tm_about .big_image img {
+    mix-blend-mode: normal !important;
+    border-radius: 20px;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+    transition: all 0.4s ease;
+    position: relative;
+    z-index: 1;
+    display: block;
+}
+
+.foliox_tm_about .big_image:hover img {
+    transform: translateY(5px) translateX(-5px);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6);
+}
+
+.foliox_tm_about .big_image:hover::before {
+    top: -15px;
+    left: 5px;
+    border-color: #00c0ff;
+    box-shadow: 0 0 30px rgba(0, 192, 255, 0.6);
+}
+
+/* CV Buttons - Always in one line */
+.cv-buttons {
+    display: inline-flex !important;
+    flex-direction: row !important;
+    gap: 15px;
+    flex-wrap: nowrap !important;
+    margin-top: 30px;
+    justify-content: flex-start;
+}
+
+.cv-buttons .foliox_tm_button {
+    width: auto !important;
+    flex-shrink: 0;
+    float: none !important;
+}
+
+/* ============================================
+   ARROW LIST ICONS - ALL SECTIONS
+   ============================================ */
+/* Bullet arrow styling for all resume/experience sections */
+.bullet-arrow {
+    color: var(--color-primary);
+    font-weight: bold;
+    margin-right: 2px;
+}
+
+/* Style for bullet points in resume sections */
+.resume_list .text {
+    line-height: 1.8;
+}
+
 /*---------------------------------------------------*/
 /*	20) FOLIOX MEDIA QUERIES (FOR SMALL DEVICES)
 /*---------------------------------------------------*/
 
 @media (max-width: 1600px) {
-	.container{max-width: 1070px;padding: 0px 20px;}
+	.container{max-width: 1400px;padding: 0px 40px;}
 	body{font-size: 16px;}
 	.foliox_tm_modalbox .description_wrap{padding: 40px;}
 	.foliox_tm_modalbox .description_wrap:before{height: 40px;}
@@ -3450,19 +3646,17 @@ input[type=number] {
 @media (max-width: 1040px) {
 	.foliox_tm_header{display: none;}
 	.foliox_tm_mobile_menu{display: block;}
-	.foliox_tm_hero .content{flex-direction: column-reverse;text-align: center;justify-content: center;}
-	.foliox_tm_hero .right{width: 100%;padding-left: 0px;margin-bottom: 30px;}
-	.foliox_tm_hero .right img{max-width: 200px;max-height: 200px;}
-	.foliox_tm_hero .left{width: 100%;}
-	.foliox_tm_hero .name{font-size: 65px;margin-bottom: 12px;}
-	.foliox_tm_hero .job{font-size: 19px;margin-bottom: 35px;}
-	.foliox_tm_button a{padding: 13px 38px;}
+	.foliox_tm_hero .content{flex-direction: column;text-align: left;justify-content: center;}
+	.foliox_tm_hero .left{width: 100%;max-width: 100%;padding: 0 20px;text-align: left;}
+	.foliox_tm_hero .name{font-size: 55px;margin-bottom: 12px;}
+	.foliox_tm_hero .job{font-size: 18px;margin-bottom: 25px;}
+	.foliox_tm_button a{padding: 1rem 1.5rem;}
 	.foliox_tm_features .list ul li{width: 50%;}
 	.foliox_tm_main_title span{font-size: 19px;}
 	.foliox_tm_main_title h3{font-size: 35px;}
 	.foliox_tm_about .wrapper{flex-direction: column;}
-	.foliox_tm_about .left{width: 100%;margin-bottom: 60px;}
-	.foliox_tm_about .right{width: 100%;padding-left: 0px;top: 0px;}
+	.foliox_tm_about .left{width: 100%;margin-bottom: 60px;padding-left: 0;}
+	.foliox_tm_about .right{width: 100%;padding-left: 0px;padding-right: 0px;top: 0px;}
 	.foliox_tm_about .badge{display: none;}
 	.foliox_tm_about .experience{display: none;}
 	.foliox_tm_about .small_image .in{display: none;}
@@ -3491,8 +3685,13 @@ input[type=number] {
 	.foliox_tm_subscribe .field input[type="text"]{font-size: 16px;}
 }
 @media (max-width: 768px) {
-	.foliox_tm_hero .name{font-size: 50px;margin-bottom: 8px;}
-	.foliox_tm_hero .job{font-size: 17px;}
+	.foliox_tm_hero .name{font-size: 40px;margin-bottom: 8px;}
+	.foliox_tm_hero .job{font-size: 16px;}
+	.hero-description{font-size: 14px;}
+	.cv-buttons{flex-direction: row !important;justify-content: flex-start;flex-wrap: nowrap !important;}
+	.cv-buttons .foliox_tm_button a{padding: 0.75rem 0.9rem;font-size: 11px;}
+	.foliox_tm_about .left{display: flex;justify-content: center;}
+	.foliox_tm_about .big_image{float: none;}
 	.foliox_tm_features .list ul{margin-left: 0px;}
 	.foliox_tm_features .list ul li{width: 100%;padding-left: 0px;}
 	.foliox_tm_features .list ul li .list_inner{padding: 40px;}
