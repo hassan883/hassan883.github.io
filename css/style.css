@@ -663,50 +663,33 @@ button:focus {
     font-size: 16px;
 }
 
-/* Enhanced Hero Button Styles */
+/* Enhanced Hero Button Styles - Clean Professional Look */
 .hero-buttons .foliox_tm_button a:hover {
-    transform: translateY(-4px) scale(1.02);
-    box-shadow: 0 12px 35px rgba(0, 192, 255, 0.4);
+    transform: translateY(-3px);
 }
 
-/* Contact Button */
+/* GitHub Button - Professional Dark Style */
 .hero-buttons .foliox_tm_button:first-child a {
-    background: var(--gradient-primary);
-    border-color: transparent;
+    background: rgba(36, 41, 46, 0.95);
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* GitHub Button */
+.hero-buttons .foliox_tm_button:first-child a:hover {
+    background: rgba(50, 56, 64, 1);
+    border-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* LinkedIn Button - Professional Blue Style */
 .hero-buttons .foliox_tm_button:nth-child(2) a {
-    background: linear-gradient(135deg, #24292e 0%, #1a1e22 100%);
-    border-color: rgba(255, 255, 255, 0.1);
+    background: rgba(0, 119, 181, 0.95);
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .hero-buttons .foliox_tm_button:nth-child(2) a:hover {
-    background: linear-gradient(135deg, #2d333b 0%, #24292e 100%);
-    box-shadow: 0 12px 35px rgba(36, 41, 46, 0.5);
-}
-
-/* LinkedIn Button */
-.hero-buttons .foliox_tm_button:nth-child(3) a {
-    background: linear-gradient(135deg, #0077b5 0%, #005885 100%);
-    border-color: rgba(255, 255, 255, 0.1);
-}
-
-.hero-buttons .foliox_tm_button:nth-child(3) a:hover {
-    background: linear-gradient(135deg, #0088cc 0%, #0077b5 100%);
-    box-shadow: 0 12px 35px rgba(0, 119, 181, 0.5);
-}
-
-/* Medium Button - Fixed visibility */
-.hero-buttons .foliox_tm_button:nth-child(4) a {
-    background: linear-gradient(135deg, #1a1a1a 0%, #000000 100%);
-    border-color: rgba(255, 255, 255, 0.15);
-}
-
-.hero-buttons .foliox_tm_button:nth-child(4) a:hover {
-    background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
-    border-color: rgba(255, 255, 255, 0.3);
-    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.6);
+    background: rgba(0, 136, 204, 1);
+    border-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 25px rgba(0, 119, 181, 0.4);
 }
 
 /* Hero Image Enhancement */
