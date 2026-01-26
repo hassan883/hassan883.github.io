@@ -37,7 +37,19 @@
 
 	<!-- PRELOADER -->
 	<div id="preloader">
-		<div class="loader_line"></div>
+		<div class="preloader_content">
+			<div class="preloader_logo">
+				<img src="img/logo/logo_l.png" alt="Hassan Javed" />
+			</div>
+			<div class="preloader_name">
+				<span class="name_text">Hassan</span>
+				<span class="name_highlight">Javed</span>
+			</div>
+			<div class="preloader_tagline">AI Developer & Researcher</div>
+			<div class="preloader_bar">
+				<div class="preloader_progress"></div>
+			</div>
+		</div>
 	</div>
 	<!-- /PRELOADER -->
 
@@ -737,67 +749,164 @@
 
 				
 		<!-- CERTIFICATIONS -->
-		<div class="foliox_tm_section"  id="certification">
-			<div class="foliox_tm_resume">
+		<div class="foliox_tm_section" id="certification">
+			<div class="foliox_tm_certifications">
 				<div class="container">
-					<!-- <div class="foliox_tm_main_title">
-										<span>Resume</span>
-										<h3>I Worked for Some Big Companies</h3>
-									</div> -->
-					<div class="wrapper">
-		
-
-							<!-- Certifications Section -->
-							<div class="full-width">
-								<div class="title">
-									<h3 style="color: #00c0ff;">Certifications</h3>
+					<div class="foliox_tm_main_title">
+						<h3 style="color: #00c0ff;">Certifications</h3>
+					</div>
+					<div class="certifications_grid">
+						<!-- AI & Deep Learning -->
+						<div class="cert_card wow fadeInUp" data-wow-duration="1s">
+							<div class="cert_card_inner">
+								<div class="cert_icon">
+									<i class="icon-brain"></i>
 								</div>
-								<div class="resume_list">
-			
-									<ul>
-										<li class="wow fadeInUp" data-wow-duration="1s">
-											<span class="icon"><img class="svg" src="img/svg/certificat1.svg" alt="" /></span>
-											<div class="list_inner certification-section">
-												<p class="text" style="text-align: justify;">
-													• Neural Networks and Deep Learning | DeepLearning.AI <span
-														class="certification-date">(Jul 2024)</span><br>
-													• Build Basic Generative Adversarial Networks (GANs) | DeepLearning.AI <span
-														class="certification-date">(Jan 2024)</span><br>
-													• Introduction to TensorFlow for AI, ML, and Deep Learning | DeepLearning.AI
-													<span class="certification-date">(Sep 2023)</span><br>
-													• MATLAB Certified | MathWorks <span class="certification-date">(Aug
-														2023)</span><br>
-													• What is Data Science? | Coursera <span class="certification-date">(Jul
-														2023)</span><br>
-													• Ethics in the Age of Generative AI | LinkedIn <span
-														class="certification-date">(Jul 2023)</span><br>
-													• Ask Questions to Make Data-Driven Decisions | Google <span
-														class="certification-date">(Jan 2023)</span><br>
-													• Data Manipulation with Pandas | DataCamp <span
-														class="certification-date">(Dec 2022)</span><br>
-													• Foundations: Data, Data, Everywhere | Google <span
-														class="certification-date">(Dec 2022)</span><br>
-													• Intermediate Python | DataCamp <span class="certification-date">(Dec
-														2022)</span><br>
-													• Introduction to Programming Using Python | DataCamp <span
-														class="certification-date">(Dec 2022)</span><br>
-													• Data Visualization | Kaggle <span class="certification-date">(Apr
-														2022)</span><br>
-													• Intermediate Machine Learning | Kaggle <span
-														class="certification-date">(Mar 2021)</span><br>
-													• Intro to Machine Learning | Kaggle <span class="certification-date">(Mar
-														2021)</span><br>
-													• Machine Learning | Stanford University <span
-														class="certification-date">(Mar 2021)</span><br>
-													• Microsoft Technology Associate: Introduction to Programming Using Python
-													<span class="certification-date">(Jan 2021)</span>
-												</p>
-											</div>
-										</li>
-									</ul>
-								</div>
+								<div class="cert_category">AI & Deep Learning</div>
+								<ul class="cert_list">
+									<li>
+										<span class="cert_name">Neural Networks and Deep Learning</span>
+										<span class="cert_issuer">DeepLearning.AI</span>
+										<span class="cert_date">Jul 2024</span>
+									</li>
+									<li>
+										<span class="cert_name">Build Basic GANs</span>
+										<span class="cert_issuer">DeepLearning.AI</span>
+										<span class="cert_date">Jan 2024</span>
+									</li>
+									<li>
+										<span class="cert_name">TensorFlow for AI, ML & DL</span>
+										<span class="cert_issuer">DeepLearning.AI</span>
+										<span class="cert_date">Sep 2023</span>
+									</li>
+								</ul>
 							</div>
-		
+						</div>
+
+						<!-- Machine Learning -->
+						<div class="cert_card wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s">
+							<div class="cert_card_inner">
+								<div class="cert_icon">
+									<i class="icon-chart-bar"></i>
+								</div>
+								<div class="cert_category">Machine Learning</div>
+								<ul class="cert_list">
+									<li>
+										<span class="cert_name">Machine Learning</span>
+										<span class="cert_issuer">Stanford University</span>
+										<span class="cert_date">Mar 2021</span>
+									</li>
+									<li>
+										<span class="cert_name">Intermediate Machine Learning</span>
+										<span class="cert_issuer">Kaggle</span>
+										<span class="cert_date">Mar 2021</span>
+									</li>
+									<li>
+										<span class="cert_name">Intro to Machine Learning</span>
+										<span class="cert_issuer">Kaggle</span>
+										<span class="cert_date">Mar 2021</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<!-- Data Science -->
+						<div class="cert_card wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
+							<div class="cert_card_inner">
+								<div class="cert_icon">
+									<i class="icon-database"></i>
+								</div>
+								<div class="cert_category">Data Science</div>
+								<ul class="cert_list">
+									<li>
+										<span class="cert_name">What is Data Science?</span>
+										<span class="cert_issuer">Coursera</span>
+										<span class="cert_date">Jul 2023</span>
+									</li>
+									<li>
+										<span class="cert_name">Data Manipulation with Pandas</span>
+										<span class="cert_issuer">DataCamp</span>
+										<span class="cert_date">Dec 2022</span>
+									</li>
+									<li>
+										<span class="cert_name">Data Visualization</span>
+										<span class="cert_issuer">Kaggle</span>
+										<span class="cert_date">Apr 2022</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<!-- Google Certifications -->
+						<div class="cert_card wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+							<div class="cert_card_inner">
+								<div class="cert_icon">
+									<i class="icon-google"></i>
+								</div>
+								<div class="cert_category">Google & Analytics</div>
+								<ul class="cert_list">
+									<li>
+										<span class="cert_name">Ask Questions to Make Data-Driven Decisions</span>
+										<span class="cert_issuer">Google</span>
+										<span class="cert_date">Jan 2023</span>
+									</li>
+									<li>
+										<span class="cert_name">Foundations: Data, Data, Everywhere</span>
+										<span class="cert_issuer">Google</span>
+										<span class="cert_date">Dec 2022</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<!-- Programming -->
+						<div class="cert_card wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
+							<div class="cert_card_inner">
+								<div class="cert_icon">
+									<i class="icon-code"></i>
+								</div>
+								<div class="cert_category">Programming</div>
+								<ul class="cert_list">
+									<li>
+										<span class="cert_name">MTA: Programming Using Python</span>
+										<span class="cert_issuer">Microsoft</span>
+										<span class="cert_date">Jan 2021</span>
+									</li>
+									<li>
+										<span class="cert_name">Intermediate Python</span>
+										<span class="cert_issuer">DataCamp</span>
+										<span class="cert_date">Dec 2022</span>
+									</li>
+									<li>
+										<span class="cert_name">Intro to Programming Using Python</span>
+										<span class="cert_issuer">DataCamp</span>
+										<span class="cert_date">Dec 2022</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<!-- Tools & Ethics -->
+						<div class="cert_card wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
+							<div class="cert_card_inner">
+								<div class="cert_icon">
+									<i class="icon-tools"></i>
+								</div>
+								<div class="cert_category">Tools & Ethics</div>
+								<ul class="cert_list">
+									<li>
+										<span class="cert_name">MATLAB Certified</span>
+										<span class="cert_issuer">MathWorks</span>
+										<span class="cert_date">Aug 2023</span>
+									</li>
+									<li>
+										<span class="cert_name">Ethics in the Age of Generative AI</span>
+										<span class="cert_issuer">LinkedIn</span>
+										<span class="cert_date">Jul 2023</span>
+									</li>
+								</ul>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>

@@ -4,111 +4,600 @@
 /*	AI Developer and Researcher
 /*	Updated 2025
 
-/* Modern Visual Enhancements */
+/* ============================================
+   MODERN DARK THEME - ENHANCED UI/UX
+   ============================================ */
+
+/* CSS Variables - Dark Professional Theme */
 :root {
+    /* Primary Colors */
+    --color-primary: #00c0ff;
+    --color-secondary: #6c63ff;
+    --color-accent: #00e5ff;
+
+    /* Background Colors */
+    --bg-dark: #0a0a1a;
+    --bg-darker: #050510;
+    --bg-card: rgba(20, 15, 45, 0.8);
+    --bg-card-hover: rgba(30, 25, 60, 0.9);
+    --bg-glass: rgba(255, 255, 255, 0.03);
+
+    /* Text Colors */
+    --text-primary: #ffffff;
+    --text-secondary: #b4afc6;
+    --text-muted: #8a85a0;
+
+    /* Gradients */
     --gradient-primary: linear-gradient(135deg, #00c0ff 0%, #6c63ff 100%);
-    --gradient-accent: linear-gradient(135deg, #432d92 0%, #1e1345 100%);
+    --gradient-accent: linear-gradient(135deg, #00e5ff 0%, #00c0ff 50%, #6c63ff 100%);
+    --gradient-card: linear-gradient(145deg, rgba(67, 45, 146, 0.4) 0%, rgba(30, 19, 69, 0.6) 100%);
+    --gradient-glow: radial-gradient(circle at center, rgba(0, 192, 255, 0.15) 0%, transparent 70%);
+
+    /* Shadows */
     --shadow-soft: 0 10px 40px rgba(0, 192, 255, 0.15);
-    --shadow-card: 0 8px 32px rgba(0, 0, 0, 0.3);
+    --shadow-card: 0 8px 32px rgba(0, 0, 0, 0.4);
+    --shadow-glow: 0 0 30px rgba(0, 192, 255, 0.3);
+    --shadow-intense: 0 20px 60px rgba(0, 0, 0, 0.5);
+
+    /* Border */
+    --border-subtle: 1px solid rgba(255, 255, 255, 0.08);
+    --border-glow: 1px solid rgba(0, 192, 255, 0.3);
+
+    /* Transitions */
     --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    --transition-fast: all 0.2s ease;
 }
 
-/* Enhanced Button Hover Effects */
+/* ============================================
+   ENHANCED PRELOADER - Logo + Name
+   ============================================ */
+#preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 99999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #0a0a1a 0%, #1e1345 50%, #0a0a1a 100%);
+    background-size: 400% 400%;
+    animation: gradientShift 3s ease infinite;
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+#preloader::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--gradient-glow);
+    opacity: 0.5;
+}
+
+.preloader_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    animation: fadeInUp 0.8s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.preloader_logo {
+    margin-bottom: 25px;
+    animation: logoFloat 2s ease-in-out infinite;
+}
+
+@keyframes logoFloat {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.preloader_logo img {
+    max-width: 120px;
+    max-height: 120px;
+    filter: drop-shadow(0 0 20px rgba(0, 192, 255, 0.5));
+}
+
+.preloader_name {
+    font-family: 'Poppins', sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.preloader_name .name_text {
+    color: #fff;
+}
+
+.preloader_name .name_highlight {
+    color: var(--color-primary);
+    margin-left: 10px;
+}
+
+.preloader_tagline {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: var(--text-secondary);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    opacity: 0.8;
+}
+
+.preloader_bar {
+    width: 200px;
+    height: 3px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.preloader_progress {
+    height: 100%;
+    width: 0%;
+    background: var(--gradient-primary);
+    border-radius: 10px;
+    animation: loadProgress 2s ease-in-out forwards;
+}
+
+@keyframes loadProgress {
+    0% { width: 0%; }
+    100% { width: 100%; }
+}
+
+/* Preloader Exit Animation */
+.preloaded .preloader_content {
+    animation: fadeOutDown 0.5s ease-in forwards;
+}
+
+@keyframes fadeOutDown {
+    to {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+}
+
+.preloaded {
+    animation: preloaderExit 0.6s ease-in 0.3s forwards;
+}
+
+@keyframes preloaderExit {
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+/* ============================================
+   CERTIFICATIONS SECTION - Card Grid
+   ============================================ */
+.foliox_tm_certifications {
+    width: 100%;
+    height: auto;
+    clear: both;
+    float: left;
+    padding: 100px 0;
+}
+
+.certifications_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 60px;
+}
+
+.cert_card {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.cert_card_inner {
+    background: var(--gradient-card);
+    backdrop-filter: blur(10px);
+    border: var(--border-subtle);
+    border-radius: 16px;
+    padding: 30px;
+    height: 100%;
+    transition: var(--transition-smooth);
+    position: relative;
+    overflow: hidden;
+}
+
+.cert_card_inner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: var(--gradient-primary);
+    transform: scaleX(0);
+    transition: transform 0.4s ease;
+}
+
+.cert_card:hover .cert_card_inner {
+    transform: translateY(-8px);
+    border-color: rgba(0, 192, 255, 0.3);
+    box-shadow: var(--shadow-glow);
+}
+
+.cert_card:hover .cert_card_inner::before {
+    transform: scaleX(1);
+}
+
+.cert_icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    background: rgba(0, 192, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    transition: var(--transition-smooth);
+}
+
+.cert_icon i {
+    font-size: 28px;
+    color: var(--color-primary);
+    transition: var(--transition-smooth);
+}
+
+.cert_card:hover .cert_icon {
+    background: var(--gradient-primary);
+    transform: scale(1.1) rotate(5deg);
+}
+
+.cert_card:hover .cert_icon i {
+    color: #fff;
+}
+
+.cert_category {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.cert_list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.cert_list li {
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    transition: var(--transition-fast);
+}
+
+.cert_list li:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.cert_list li:hover {
+    padding-left: 10px;
+}
+
+.cert_name {
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 4px;
+    transition: var(--transition-fast);
+}
+
+.cert_list li:hover .cert_name {
+    color: var(--color-primary);
+}
+
+.cert_issuer {
+    display: block;
+    font-size: 13px;
+    color: var(--color-primary);
+    margin-bottom: 2px;
+}
+
+.cert_date {
+    display: block;
+    font-size: 12px;
+    color: var(--text-muted);
+}
+
+/* Certifications Responsive */
+@media (max-width: 1040px) {
+    .certifications_grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .certifications_grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cert_card_inner {
+        padding: 25px;
+    }
+}
+
+/* ============================================
+   ENHANCED BUTTONS
+   ============================================ */
 .foliox_tm_button a {
     transition: var(--transition-smooth);
     box-shadow: 0 4px 15px rgba(0, 192, 255, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.foliox_tm_button a::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.6s ease, height 0.6s ease;
 }
 
 .foliox_tm_button a:hover {
     transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(0, 192, 255, 0.4);
+    box-shadow: 0 8px 30px rgba(0, 192, 255, 0.5);
 }
 
-/* Enhanced Section Titles */
+.foliox_tm_button a:hover::after {
+    width: 300px;
+    height: 300px;
+}
+
+/* ============================================
+   ENHANCED SECTION TITLES
+   ============================================ */
 .foliox_tm_main_title h3 {
     position: relative;
     display: inline-block;
+    padding-bottom: 20px;
 }
 
 .foliox_tm_main_title h3::after {
     content: '';
     position: absolute;
-    bottom: -10px;
+    bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 60px;
-    height: 3px;
+    width: 80px;
+    height: 4px;
     background: var(--gradient-primary);
     border-radius: 2px;
 }
 
-/* Enhanced Resume List Items */
+.foliox_tm_main_title h3::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 4px;
+    background: var(--gradient-primary);
+    border-radius: 2px;
+    opacity: 0.5;
+}
+
+/* ============================================
+   ENHANCED RESUME/EXPERIENCE CARDS
+   ============================================ */
 .resume_list ul li .list_inner {
     transition: var(--transition-smooth);
-    border-radius: 12px;
-    padding: 25px 25px 25px 107px;
-    background: rgba(58, 43, 113, 0.3);
-    margin-bottom: 10px;
+    border-radius: 16px;
+    padding: 30px 30px 30px 110px;
+    background: var(--gradient-card);
+    backdrop-filter: blur(10px);
+    margin-bottom: 15px;
+    border: var(--border-subtle);
+    position: relative;
+}
+
+.resume_list ul li .list_inner::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: var(--gradient-primary);
+    border-radius: 4px 0 0 4px;
+    opacity: 0;
+    transition: var(--transition-smooth);
 }
 
 .resume_list ul li .list_inner:hover {
-    background: rgba(58, 43, 113, 0.5);
-    transform: translateX(5px);
-}
-
-/* Enhanced Counter Cards */
-.foliox_tm_counter .counter_list ul li .list_inner {
-    transition: var(--transition-smooth);
-    border: 1px solid transparent;
-}
-
-.foliox_tm_counter .counter_list ul li .list_inner:hover {
-    border-color: rgba(0, 192, 255, 0.3);
-    transform: translateY(-5px);
+    background: var(--bg-card-hover);
+    transform: translateX(8px);
+    border-color: rgba(0, 192, 255, 0.2);
     box-shadow: var(--shadow-soft);
 }
 
-/* Enhanced Skills Section */
+.resume_list ul li .list_inner:hover::before {
+    opacity: 1;
+}
+
+.resume_list ul li .icon {
+    background: var(--gradient-primary);
+    box-shadow: var(--shadow-glow);
+}
+
+/* ============================================
+   ENHANCED COUNTER CARDS
+   ============================================ */
+.foliox_tm_counter .counter_list ul li .list_inner {
+    transition: var(--transition-smooth);
+    border: var(--border-subtle);
+    background: var(--gradient-card);
+    backdrop-filter: blur(10px);
+    position: relative;
+    overflow: hidden;
+}
+
+.foliox_tm_counter .counter_list ul li .list_inner::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(0, 192, 255, 0.1) 0%, transparent 70%);
+    opacity: 0;
+    transition: var(--transition-smooth);
+}
+
+.foliox_tm_counter .counter_list ul li .list_inner:hover {
+    border-color: rgba(0, 192, 255, 0.4);
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: var(--shadow-glow);
+}
+
+.foliox_tm_counter .counter_list ul li .list_inner:hover::before {
+    opacity: 1;
+}
+
+/* ============================================
+   ENHANCED SKILLS SECTION
+   ============================================ */
 .progress_inner {
-    padding: 15px 0;
+    padding: 18px 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    transition: var(--transition-fast);
+}
+
+.progress_inner:hover {
+    padding-left: 10px;
+    background: rgba(0, 192, 255, 0.03);
+    border-radius: 8px;
 }
 
 .progress_inner:last-child {
     border-bottom: none;
 }
 
-/* Enhanced News/Blog Cards */
+/* ============================================
+   ENHANCED NEWS/BLOG CARDS
+   ============================================ */
 .foliox_tm_news .news_list ul li .list_inner {
     transition: var(--transition-smooth);
-    border-radius: 12px;
+    border-radius: 16px;
     overflow: hidden;
+    border: var(--border-subtle);
+    background: var(--bg-card);
 }
 
 .foliox_tm_news .news_list ul li .list_inner:hover {
-    transform: translateY(-8px);
-    box-shadow: var(--shadow-card);
+    transform: translateY(-12px);
+    box-shadow: var(--shadow-intense);
+    border-color: rgba(0, 192, 255, 0.3);
 }
 
-/* Enhanced Testimonials */
+.foliox_tm_news .news_list ul li .details {
+    background: var(--gradient-card);
+}
+
+/* ============================================
+   ENHANCED TESTIMONIALS
+   ============================================ */
 .foliox_tm_testimonials .text p {
     position: relative;
-    padding: 0 20px;
+    padding: 0 30px;
 }
 
-/* Enhanced Contact Section Icons */
+.foliox_tm_testimonials .icon .svg {
+    filter: drop-shadow(0 0 20px rgba(0, 192, 255, 0.5));
+}
+
+/* ============================================
+   ENHANCED CONTACT SECTION
+   ============================================ */
 .foliox_tm_contact .left .icon {
     transition: var(--transition-smooth);
+    box-shadow: 0 5px 20px rgba(0, 192, 255, 0.3);
 }
 
 .foliox_tm_contact .left .list_inner:hover .icon {
-    transform: scale(1.1);
-    box-shadow: 0 8px 25px rgba(0, 192, 255, 0.4);
+    transform: scale(1.15) rotate(5deg);
+    box-shadow: var(--shadow-glow);
 }
 
-/* Smooth Scrollbar Enhancement */
+/* ============================================
+   ENHANCED PARTNERS SECTION
+   ============================================ */
+.foliox_tm_partners .partners_list {
+    transition: var(--transition-smooth);
+    background: var(--gradient-card);
+    border: var(--border-subtle);
+}
+
+.foliox_tm_partners .partners_list:hover {
+    box-shadow: var(--shadow-soft);
+    border-color: rgba(0, 192, 255, 0.2);
+}
+
+/* ============================================
+   GLOBAL ENHANCEMENTS
+   ============================================ */
 * {
     scroll-behavior: smooth;
+}
+
+/* Glowing Text Effect for Highlighted Elements */
+.name span,
+h3 span {
+    text-shadow: 0 0 30px rgba(0, 192, 255, 0.5);
+}
+
+/* Enhanced Selection Color */
+::selection {
+    background: rgba(0, 192, 255, 0.3);
+    color: #fff;
+}
+
+/* Smooth Focus States */
+a:focus,
+button:focus {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 3px;
 }
 
 /* Publication Badge Styling */
@@ -116,15 +605,6 @@
     display: inline-block;
     padding: 5px 0;
     font-size: 16px;
-}
-
-/* Enhanced Partners Section */
-.foliox_tm_partners .partners_list {
-    transition: var(--transition-smooth);
-}
-
-.foliox_tm_partners .partners_list:hover {
-    box-shadow: var(--shadow-soft);
 }
 
 

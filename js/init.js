@@ -249,22 +249,29 @@ function progress_by_frenify(wrapper){
 // -----------------------------------------------------
 
 function foliox_tm_preloader(){
-	
+
 	"use strict";
-	
+
 	var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ? true : false;
 	var preloader = $('#preloader');
-	
+
 	if (!isMobile) {
+		// Wait for progress bar animation to complete (2s) then fade out
 		setTimeout(function() {
 			preloader.addClass('preloaded');
-		}, 800);
+		}, 2200);
 		setTimeout(function() {
 			preloader.remove();
-		}, 2000);
+		}, 3000);
 
 	} else {
-		preloader.remove();
+		// Faster preloader for mobile
+		setTimeout(function() {
+			preloader.addClass('preloaded');
+		}, 1500);
+		setTimeout(function() {
+			preloader.remove();
+		}, 2200);
 	}
 }
 
