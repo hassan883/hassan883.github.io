@@ -731,6 +731,74 @@ button:focus {
     color: var(--color-primary);
 }
 
+/* Hero Greeting and Description Styles */
+.hero-greeting {
+    font-size: 18px;
+    color: var(--color-primary);
+    font-weight: 500;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+}
+
+.hero-description {
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--text-secondary);
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.hero-description b {
+    color: var(--color-primary);
+}
+
+/* Technology Grid in About Section */
+.tech-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.tech-item {
+    display: inline-block;
+    padding: 8px 16px;
+    background: transparent;
+    border: 1px solid rgba(0, 192, 255, 0.4);
+    border-radius: 20px;
+    font-size: 13px;
+    color: var(--color-primary);
+    transition: all 0.3s ease;
+}
+
+.tech-item:hover {
+    background: rgba(0, 192, 255, 0.1);
+    border-color: var(--color-primary);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 192, 255, 0.2);
+}
+
+/* Responsive Hero Description */
+@media (max-width: 768px) {
+    .hero-greeting {
+        font-size: 16px;
+    }
+
+    .hero-description {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .tech-grid {
+        justify-content: center;
+    }
+
+    .tech-item {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+}
+
 /* Hero Image Enhancement */
 .foliox_tm_hero .right img {
     filter: drop-shadow(0 20px 50px rgba(0, 192, 255, 0.2));
