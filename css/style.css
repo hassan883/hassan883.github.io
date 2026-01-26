@@ -663,18 +663,23 @@ button:focus {
     font-size: 14px;
 }
 
-/* Enhanced Hero Button Styles - Transparent with Theme Border */
+/* Enhanced Hero Button Styles - Transparent with 3D Pop Effect */
 .hero-buttons .foliox_tm_button a {
     background: transparent;
-    border: 1px solid var(--color-primary);
+    border: 1px solid rgba(0, 192, 255, 0.5);
     color: #fff;
+    box-shadow: 0 2px 0 rgba(0, 192, 255, 0.3);
+    transform: translateY(0);
 }
 
 .hero-buttons .foliox_tm_button a:hover {
-    transform: translateY(-2px);
-    background: rgba(0, 192, 255, 0.1);
-    border-color: var(--color-primary);
-    box-shadow: 0 4px 20px rgba(0, 192, 255, 0.25);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0, 192, 255, 0.4), 0 4px 0 rgba(0, 192, 255, 0.5);
+}
+
+.hero-buttons .foliox_tm_button a:active {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 10px rgba(0, 192, 255, 0.3), 0 1px 0 rgba(0, 192, 255, 0.4);
 }
 
 .hero-buttons .foliox_tm_button a i {
@@ -717,9 +722,9 @@ button:focus {
    ENHANCED HEADER/NAVIGATION
    ============================================ */
 .foliox_tm_header {
-    background: rgba(10, 10, 26, 0.85);
+    background: rgba(30, 19, 69, 0.9);
     backdrop-filter: blur(20px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(0, 192, 255, 0.1);
 }
 
 .foliox_tm_header .menu ul li a {
